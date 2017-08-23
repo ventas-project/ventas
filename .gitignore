@@ -1,7 +1,8 @@
 *.tar.gz
 
 *.exe
-<<<<<<< HEAD
+
+tmp/*
 src/ventas
 src/ventasd
 src/ventas-cli
@@ -9,7 +10,6 @@ src/ventas-tx
 src/test/test_ventas
 src/test/test_ventas_fuzzy
 src/qt/test/test_ventas-qt
-=======
 data/*
 src/litecoin
 src/litecoind
@@ -18,7 +18,6 @@ src/litecoin-tx
 src/test/test_litecoin
 src/test/test_litecoin_fuzzy
 src/qt/test/test_litecoin-qt
->>>>>>> f650cfd4c5bee2ce674d52abee62617ee870941b
 
 # autoreconf
 Makefile.in
@@ -125,3 +124,4 @@ qa/cache/*
 
 libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
+tmp/bitcoin-1.0.0/bin/bitcoin-cli
