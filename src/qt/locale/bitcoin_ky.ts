@@ -38,8 +38,8 @@
         <translation>Билдирүүнү &amp;текшерүү...</translation>
     </message>
     <message>
-        <source>Litecoin</source>
-        <translation>Litecoin</translation>
+        <source>Ventas</source>
+        <translation>Ventas</translation>
     </message>
     <message>
         <source>Wallet</source>
