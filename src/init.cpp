@@ -615,6 +615,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
     RenameThread("bitcoin-loadblk");
+    DbgMsg("thread Import Start");
 
     {
     CImportingNow imp;

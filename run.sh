@@ -9,7 +9,7 @@ arch=`uname -m`
 ext=
 # options
 #options=" -reindex"
-options=
+options="-debug=1"
 printc=
 
 if [ "${platform}" == "linux" ] || [ "${platform}" == "Linux" ]; then

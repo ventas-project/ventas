@@ -1169,6 +1169,7 @@ inline void static SendBlockTransactions(const CBlock& block, const BlockTransac
 bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStream& vRecv, int64_t nTimeReceived, const CChainParams& chainparams, CConnman& connman, const std::atomic<bool>& interruptMsgProc)
 {
     LogPrint("net", "received: %s (%u bytes) peer=%d\n", SanitizeString(strCommand), vRecv.size(), pfrom->id);
+    DbgMsg("cmd:%s" , SanitizeString(strCommand));
     if (IsArgSet("-dropmessagestest") && GetRand(GetArg("-dropmessagestest", 0)) == 0)
     {
         LogPrintf("dropmessagestest DROPPING RECV MESSAGE\n");
@@ -2777,9 +2778,12 @@ bool SendMessages(CNode* pto, CConnman& connman, const std::atomic<bool>& interr
 {
     const Consensus::Params& consensusParams = Params().GetConsensus();
     {
+        
         // Don't send anything until the version handshake is complete
-        if (!pto->fSuccessfullyConnected || pto->fDisconnect)
+        if (!pto->fSuccessfullyConnected || pto->fDisconnect){
+            DbgMsg("Nothing... %d ,%d " , pto->fSuccessfullyConnected ,pto->fDisconnect);
             return true;
+        }
 
         // If we get here, the outgoing message serialization version is set and can't change.
         const CNetMsgMaker msgMaker(pto->GetSendVersion());
@@ -2824,6 +2828,7 @@ bool SendMessages(CNode* pto, CConnman& connman, const std::atomic<bool>& interr
         // Address refresh broadcast
         int64_t nNow = GetTimeMicros();
         if (!IsInitialBlockDownload() && pto->nNextLocalAddrSend < nNow) {
+            DbgMsg("!init  %d" , IsInitialBlockDownload() );
             AdvertiseLocal(pto);
             pto->nNextLocalAddrSend = PoissonNextSend(nNow, AVG_LOCAL_ADDRESS_BROADCAST_INTERVAL);
         }
