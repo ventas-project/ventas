@@ -73,15 +73,24 @@ bool LogAcceptCategory(const char* category);
 /** Send a string to the log output */
 int LogPrintStr(const std::string &str);
 
+#define DEBUG_LOG
+#ifdef DEBUG_LOG 
+#define LogPrintf(msg , args...) LogPrint(NULL, "[%s:%d]  %s() :: " msg ,  __FILE__,__LINE__,__func__ , ##args)
+#define DbgMsg(msg , args...) LogPrint(NULL, "[%s:%d]  %s() :: " msg "\n" ,  __FILE__,__LINE__,__func__ , ##args)
+#else
+#define DbgMsg(msg , args...) 
+#define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
+#endif
+
 #define LogPrint(category, ...) do { \
     if (LogAcceptCategory((category))) { \
         LogPrintStr(tfm::format(__VA_ARGS__)); \
     } \
 } while(0)
 
-#define LogPrintf(...) do { \
-    LogPrintStr(tfm::format(__VA_ARGS__)); \
-} while(0)
+// #define LogPrintf(...) do { \
+//     LogPrintStr(tfm::format(__VA_ARGS__)); \
+// } while(0)
 
 template<typename... Args>
 bool error(const char* fmt, const Args&... args)
