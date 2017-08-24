@@ -1,7 +1,7 @@
 *.tar.gz
 
 *.exe
-
+data/*
 tmp/*
 src/ventas
 src/ventasd
