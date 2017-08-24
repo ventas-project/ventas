@@ -1,1 +1,16 @@
-{}
+{
+    "files.associations": {
+        "*.inc": "php",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "*.ipp": "cpp",
+        "rope": "cpp",
+        "forward_list": "cpp",
+        "valarray": "cpp",
+        "slist": "cpp",
+        "ios": "cpp"
+    }
+}
