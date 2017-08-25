@@ -77,6 +77,12 @@ template<typename Stream> inline void ser_writedata32(Stream &s, uint32_t obj)
     obj = htole32(obj);
     s.write((char*)&obj, 4);
 }
+
+template<typename Stream> inline void ser_writedata32be(Stream &s, uint32_t obj)
+{
+    obj = htobe32(obj);
+    s.write((char*)&obj, 4);
+}
 template<typename Stream> inline void ser_writedata64(Stream &s, uint64_t obj)
 {
     obj = htole64(obj);
@@ -99,6 +105,13 @@ template<typename Stream> inline uint32_t ser_readdata32(Stream &s)
     uint32_t obj;
     s.read((char*)&obj, 4);
     return le32toh(obj);
+}
+
+template<typename Stream> inline uint32_t ser_readdata32be(Stream &s)
+{
+    uint32_t obj;
+    s.read((char*)&obj, 4);
+    return be32toh(obj);
 }
 template<typename Stream> inline uint64_t ser_readdata64(Stream &s)
 {
@@ -537,7 +550,30 @@ inline void Unserialize(Stream& is, T& a)
     a.Unserialize(is);
 }
 
-
+/**
+ * If none of the specialized versions above matched, default to calling member function.
+ * "int nType" is changed to "long nType" to keep from getting an ambiguous overload error.
+ * The compiler will only cast int to long if none of the other templates matched.
+ * Thanks to Boost serialization for this idea.
+ */
+ template<typename T>
+ inline unsigned int GetSerializeSize(const T& a, long nType, int nVersion)
+ {
+     return a.GetSerializeSize((int)nType, nVersion);
+ }
+ 
+ template<typename Stream, typename T>
+ inline void Serialize(Stream& os, const T& a, long nType, int nVersion)
+ {
+     a.Serialize(os, (int)nType, nVersion);
+ }
+ 
+ template<typename Stream, typename T>
+ inline void Unserialize(Stream& is, T& a, long nType, int nVersion)
+ {
+     a.Unserialize(is, (int)nType, nVersion);
+ }
+ 
 
 
 
