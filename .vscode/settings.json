@@ -11,6 +11,18 @@
         "forward_list": "cpp",
         "valarray": "cpp",
         "slist": "cpp",
-        "ios": "cpp"
+        "ios": "cpp",
+        "__bit_reference": "cpp",
+        "algorithm": "cpp",
+        "bitset": "cpp",
+        "chrono": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "locale": "cpp",
+        "__hash_table": "cpp",
+        "__tree": "cpp",
+        "random": "cpp"
     }
 }

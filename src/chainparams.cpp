@@ -129,7 +129,7 @@ public:
 
         vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
-        //vSeeds.push_back(CDNSSeedData("ventas.etra.kr", "seed.etra.kr",true));
+        vSeeds.push_back(CDNSSeedData("ventas.etra.kr", "seed.etra.kr",true));
         // vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
         // vSeeds.push_back(CDNSSeedData("ventastools.com", "dnsseed.ventastools.com"));
         // vSeeds.push_back(CDNSSeedData("ventaspool.org", "dnsseed.ventaspool.org"));
