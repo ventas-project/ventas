@@ -105,11 +105,11 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 0; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000006805c7318ce2736c0");
-
+        // consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000006805c7318ce2736c0");
+        consensus.nMinimumChainWork = uint256S("0x00");
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x1673fa904a93848eca83d5ca82c7af974511a7e640e22edc2976420744f2e56a"); //1155631
-
+        //consensus.defaultAssumeValid = uint256S("0x1673fa904a93848eca83d5ca82c7af974511a7e640e22edc2976420744f2e56a"); //1155631
+        consensus.defaultAssumeValid = uint256S("0x00");
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -127,8 +127,9 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x64d1570a2a6fda935fddfab84100768f8c652f2e9cb905d9c6ef1568409519d4"));
         assert(genesis.hashMerkleRoot == uint256S("0x3b6fa639787c6a266d08a76639b8bc99dca8bb475ba876f0b30c6220b2098eed"));
 
+        vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("ventas.etra.kr", "seed.etra.kr",true));
+        //vSeeds.push_back(CDNSSeedData("ventas.etra.kr", "seed.etra.kr",true));
         // vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
         // vSeeds.push_back(CDNSSeedData("ventastools.com", "dnsseed.ventastools.com"));
         // vSeeds.push_back(CDNSSeedData("ventaspool.org", "dnsseed.ventaspool.org"));
