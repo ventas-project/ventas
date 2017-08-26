@@ -226,8 +226,10 @@ UniValue getrawtransaction(const JSONRPCRequest& request)
 
     string strHex = EncodeHexTx(*tx, RPCSerializationFlags());
 
-    if (!fVerbose)
+    if (!fVerbose){ 
+        DbgMsg("%s : %s" , hash.ToString() , strHex);
         return strHex;
+    }
 
     UniValue result(UniValue::VOBJ);
     result.push_back(Pair("hex", strHex));
