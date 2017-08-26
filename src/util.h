@@ -75,12 +75,20 @@ int LogPrintStr(const std::string &str);
 
 #define DEBUG_LOG
 #ifdef DEBUG_LOG 
-#define LogPrintf(msg , args...) LogPrint(NULL, "[%s:%d]  %s() :: " msg ,  __FILE__,__LINE__,__func__ , ##args)
-#define DbgMsg(msg , args...) LogPrint(NULL, "[%s:%d]  %s() :: " msg "\n" ,  __FILE__,__LINE__,__func__ , ##args)
+#define LogPrintf(msg , args...) LogPrintStr(tfm::format( "[%s:%d]  %s() :: " msg ,  __FILE__,__LINE__,__func__ , ##args))
+#define DbgMsg(msg , args...) LogPrintStr(tfm::format( "[%s:%d]  %s() :: " msg "\n" ,  __FILE__,__LINE__,__func__ , ##args))
+#define LogPrint(category,msg, args...) do { \
+    if (LogAcceptCategory((category))) { \
+        LogPrintStr(tfm::format("[%s:%d]  %s() :: " msg ,  __FILE__,__LINE__,__func__ , ##args)); \
+    } \
+} while(0)
+
 #else
 #define DbgMsg(msg , args...) 
-#define LogPrintf(...) LogPrint(NULL, __VA_ARGS__)
-#endif
+
+#define LogPrintf(...) do { \
+    LogPrintStr(tfm::format(__VA_ARGS__)); \
+} while(0)
 
 #define LogPrint(category, ...) do { \
     if (LogAcceptCategory((category))) { \
@@ -88,9 +96,9 @@ int LogPrintStr(const std::string &str);
     } \
 } while(0)
 
-// #define LogPrintf(...) do { \
-//     LogPrintStr(tfm::format(__VA_ARGS__)); \
-// } while(0)
+#endif
+
+
 
 template<typename... Args>
 bool error(const char* fmt, const Args&... args)
