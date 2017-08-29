@@ -1228,7 +1228,7 @@ CAmount GetBlockSubsidy(const CBlockIndex * pindexPrev , const Consensus::Params
     CAmount nSubsidy  = 0;
     
     
-    if(pindexPrev==NULL||pindexPrev->nHeight<1)
+    if(pindexPrev==NULL )
         nSubsidy = 5 * COIN;
     else if(pindexPrev->nHeight <100){
         nSubsidy = 14000000 * COIN; //
