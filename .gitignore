@@ -1,5 +1,7 @@
 *.tar.gz
 settings.json
+launch.json
+tasks.json
 *.exe
 data/*
 tmp/*
@@ -126,3 +128,5 @@ libbitcoinconsensus.pc
 contrib/devtools/split-debug.sh
 tmp/bitcoin-1.0.0/bin/bitcoin-cli
 .vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
