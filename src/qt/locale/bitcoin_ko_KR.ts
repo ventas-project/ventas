@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>경고: 만약 암호화 된 지갑의 비밀번호를 잃어버릴 경우, &lt;b&gt;모든 Ventas를들을 잃어버릴 수 있습니다&lt;/b&gt;!</translation>
+        <translation>경고: 만약 암호화 된 지갑의 비밀번호를 잃어버릴 경우, &lt;b&gt;모든 Ventas들을 잃어버릴 수 있습니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,7 +181,7 @@
     </message>
     <message>
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ventas from being stolen by malware infecting your computer.</source>
-        <translation>암호화 처리 과정을 끝내기 위해 %1을 종료합니다. 지갑 암호화는 컴퓨터로의 멀웨어 감염으로 인한 Ventas를 도난을 완전히 방지할 수 없음을 기억하세요.</translation>
+        <translation>암호화 처리 과정을 끝내기 위해 %1을 종료합니다. 지갑 암호화는 컴퓨터로의 멀웨어 감염으로 인한 Ventas 도난을 완전히 방지할 수 없음을 기억하세요.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a Ventas address</source>
-        <translation>Ventas를 주소로 코인 전송</translation>
+        <translation>Ventas 주소로 코인 전송</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -363,7 +363,7 @@
     </message>
     <message>
         <source>Ventas</source>
-        <translation>Ventas를</translation>
+        <translation>Ventas</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -395,7 +395,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Ventas를 주소의 전자 서명 확인을 위해 첨부된 메시지가 있을 경우 이를 검증할 수 있습니다.</translation>
+        <translation>Ventas 주소의 전자 서명 확인을 위해 첨부된 메시지가 있을 경우 이를 검증할 수 있습니다.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -415,7 +415,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ventas: URIs)</source>
-        <translation>지불 요청하기 (QR코드와 Ventas를이 생성됩니다: URIs)</translation>
+        <translation>지불 요청하기 (QR코드와 Ventas 주소가 생성됩니다: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -435,7 +435,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>Ventas를 네트워크에 %n개의 연결이 활성화되어 있습니다.</numerusform></translation>
+        <translation><numerusform>Ventas 네트워크에 %n개의 연결이 활성화되어 있습니다.</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -743,7 +743,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid Ventas address.</source>
-        <translation>입력한 "%1" 주소는 올바른 Ventas를 주소가 아닙니다.</translation>
+        <translation>입력한 "%1" 주소는 올바른 Ventas 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -887,7 +887,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the ventas network, as detailed below.</source>
-        <translation>최근 거래는 아직 보이지 않을 것입니다, 그러므로 당신의 지갑의 잔액이 틀릴 수도 있습니다. 이 정보는 Ventas를 네트워크와 완전한 동기화가 완료되면 아래의 설명과 같이 정확해집니다.</translation>
+        <translation>최근 거래는 아직 보이지 않을 것입니다, 그러므로 당신의 지갑의 잔액이 틀릴 수도 있습니다. 이 정보는 Ventas 네트워크와 완전한 동기화가 완료되면 아래의 설명과 같이 정확해집니다.</translation>
     </message>
     <message>
         <source>Attempting to spend ventas that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1057,7 +1057,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 프록시를 통해 Ventas를 네트워크 연결</translation>
+        <translation>SOCKS5 프록시를 통해 Ventas 네트워크 연결</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1097,7 +1097,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor 서비스를 경유하여 Ventas를 네트워크에 연결하기 위해 분리된 SOCKS5 프록시를 사용.</translation>
+        <translation>Tor 서비스를 경유하여 Ventas 네트워크에 연결하기 위해 분리된 SOCKS5 프록시를 사용.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1196,7 +1196,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
-        <translation>표시된 정보가 오래된 것 같습니다. Ventas를 네트워크에 연결하고 난 다음에 지갑을 자동으로 동기화 하지만, 아직 과정이 끝나지는 않았습니다.</translation>
+        <translation>표시된 정보가 오래된 것 같습니다. Ventas 네트워크에 연결하고 난 다음에 지갑을 자동으로 동기화 하지만, 아직 과정이 끝나지는 않았습니다.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1287,7 +1287,7 @@
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Ventas address or malformed URI parameters.</source>
-        <translation>URI의 파싱에 문제가 발생했습니다. 잘못된 Ventas를 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
+        <translation>URI의 파싱에 문제가 발생했습니다. 잘못된 Ventas 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1381,7 +1381,7 @@
     </message>
     <message>
         <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>Ventas를 주소를 입력하기 (예. %1)</translation>
+        <translation>Ventas 주소를 입력하기 (예. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1805,7 +1805,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ventas network.</source>
-        <translation>지불 요청에 첨부되는 선택가능한 메시지 입니다. 이 메세지는 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 Ventas를 네트워크로 전송되지 않습니다.</translation>
+        <translation>지불 요청에 첨부되는 선택가능한 메시지 입니다. 이 메세지는 요청이 열릴 때 표시될 것 입니다. 메모: 이 메시지는 Ventas 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2038,7 +2038,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for ventas transactions than the network can process.</source>
-        <translation>블록의 용량보다 거래의 용량이 작은 경우에는 최소한의 수수료만으로도 충분합니다. 그러나 Ventas를 네트워크의 처리량보다 더 많은 거래 요구는 영원히 검증이 안 될 수도 있습니다.</translation>
+        <translation>블록의 용량보다 거래의 용량이 작은 경우에는 최소한의 수수료만으로도 충분합니다. 그러나 Ventas 네트워크의 처리량보다 더 많은 거래 요구는 영원히 검증이 안 될 수도 있습니다.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2202,7 +2202,7 @@
     </message>
     <message>
         <source>Warning: Invalid Ventas address</source>
-        <translation>경고: 잘못된 Ventas를주소입니다</translation>
+        <translation>경고: 잘못된 Ventas 주소입니다</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2245,7 +2245,7 @@
     </message>
     <message>
         <source>The Ventas address to send the payment to</source>
-        <translation>이 Ventas를 주소로 송금됩니다</translation>
+        <translation>이 Ventas 주소로 송금됩니다</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2289,7 +2289,7 @@
     </message>
     <message>
         <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>Ventas를에 첨부된 메시지: 참고용으로 거래와 함께 저장될 URI. 메모: 이 메시지는 Ventas를 네트워크로 전송되지 않습니다.</translation>
+        <translation>Ventas에 첨부된 메시지: 참고용으로 거래와 함께 저장될 URI. 메모: 이 메시지는 Ventas 네트워크로 전송되지 않습니다.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2338,7 +2338,7 @@
     </message>
     <message>
         <source>The Ventas address to sign the message with</source>
-        <translation>메세지를 서명한 Ventas를 주소</translation>
+        <translation>메세지를 서명한 Ventas 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2370,7 +2370,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Ventas address</source>
-        <translation>여러분의 Ventas를 주소를 증명하려면 메시지 서명하십시오</translation>
+        <translation>여러분의 Ventas 주소를 증명하려면 메시지 서명하십시오</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2394,11 +2394,11 @@
     </message>
     <message>
         <source>The Ventas address the message was signed with</source>
-        <translation>메세지의 서명에 사용된 Ventas를 주소</translation>
+        <translation>메세지의 서명에 사용된 Ventas 주소</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>정확한 Ventas를주소가 입력됬는지 메시지를 확인하시오</translation>
+        <translation>정확한 Ventas주소가 입력됬는지 메시지를 확인하시오</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2623,7 +2623,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>신규 채굴된 코인이 사용되기 위해서는 %1 개의 블록이 경과되어야 합니다. 블록을 생성할 때 블록체인에 추가되도록 네트워크에 전파되는 과정을 거치는데, 블록체인에 포함되지 못하고 실패한다면 해당 블록의 상태는 '미승인'으로 표현되고 Ventas를 또한 사용될 수 없습니다. 이 현상은 다른 노드가 비슷한 시간대에 동시에 블록을 생성할 때 종종 발생할 수 있습니다. </translation>
+        <translation>신규 채굴된 코인이 사용되기 위해서는 %1 개의 블록이 경과되어야 합니다. 블록을 생성할 때 블록체인에 추가되도록 네트워크에 전파되는 과정을 거치는데, 블록체인에 포함되지 못하고 실패한다면 해당 블록의 상태는 '미승인'으로 표현되고 Ventas 또한 사용될 수 없습니다. 이 현상은 다른 노드가 비슷한 시간대에 동시에 블록을 생성할 때 종종 발생할 수 있습니다. </translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3059,7 +3059,7 @@
     </message>
     <message>
         <source>Ventas Core</source>
-        <translation>Ventas를 코어</translation>
+        <translation>Ventas 코어</translation>
     </message>
     <message>
         <source>The %s developers</source>
@@ -3155,7 +3155,7 @@
     </message>
     <message>
         <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
-        <translation>경고: 현재 Ventas를 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 당신 또는 다른 참여자들이 동일한 Ventas를 버전으로 업그레이드 할 필요가 있습니다.</translation>
+        <translation>경고: 현재 Ventas 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 당신 또는 다른 참여자들이 동일한 Ventas 버전으로 업그레이드 할 필요가 있습니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>

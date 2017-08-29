@@ -999,11 +999,11 @@ static const CRPCCommand commands[] =
     { "util",               "signmessagewithprivkey", &signmessagewithprivkey, true,  {"privkey","message"} },
 
      /* Address index */
-     { "addressindex",       "getaddressmempool",      &getaddressmempool,      true  },
-     { "addressindex",       "getaddressutxos",        &getaddressutxos,        false },
-     { "addressindex",       "getaddressdeltas",       &getaddressdeltas,       false },
-     { "addressindex",       "getaddresstxids",        &getaddresstxids,        false },
-     { "addressindex",       "getaddressbalance",      &getaddressbalance,      false },
+     { "hidden",       "getaddressmempool",      &getaddressmempool,      true  },
+     { "hidden",       "getaddressutxos",        &getaddressutxos,        false },
+     { "hidden",       "getaddressdeltas",       &getaddressdeltas,       false },
+     { "hidden",       "getaddresstxids",        &getaddresstxids,        false },
+     { "hidden",       "getaddressbalance",      &getaddressbalance,      false },
 
     /* Not shown in help */
     { "hidden",             "setmocktime",            &setmocktime,            true,  {"timestamp"}},
