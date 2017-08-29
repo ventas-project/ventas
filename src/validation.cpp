@@ -1223,16 +1223,23 @@ bool ReadBlockFromDisk(CBlock& block, const CBlockIndex* pindex, const Consensus
     return true;
 }
 
-CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
+CAmount GetBlockSubsidy(const CBlockIndex * pindexPrev , const Consensus::Params& consensusParams)
 {
     CAmount nSubsidy  = 0;
-    if(nHeight<1)
+    
+    
+    if(pindexPrev==NULL||pindexPrev->nHeight<1)
         nSubsidy = 5 * COIN;
-    else if(nHeight <100){
+    else if(pindexPrev->nHeight <100){
         nSubsidy = 14000000 * COIN; //
     }else{
         nSubsidy = 50 * COIN; //
     }
+    //limit of reward
+	if (pindexPrev != NULL && (pindexPrev->nMoneySupply + nSubsidy) >= MAX_MONEY) {
+		LogPrintf("Max Money.... no more reward[pow]\n");
+		nSubsidy = 0;
+	}
     
     //TODO check MaxMoney...
     return nSubsidy;
@@ -1480,8 +1487,10 @@ bool CheckInputs(const CTransaction& tx, CValidationState &state, const CCoinsVi
 {
     if (!tx.IsCoinBase())
     {
-        if (!Consensus::CheckTxInputs(tx, state, inputs, GetSpendHeight(inputs)))
+        if (!Consensus::CheckTxInputs(tx, state, inputs, GetSpendHeight(inputs))){
+            DbgMsg("1");
             return false;
+        }
 
         if (pvChecks)
             pvChecks->reserve(tx.vin.size());
@@ -2011,8 +2020,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     std::vector<int> prevheights;
     CAmount nFees = 0;
     int nInputs = 0;
-    int64_t nSigOpsCost = 0;
+    CAmount nSigOpsCost = 0;
     
+    CAmount nValueOut = 0;
     CDiskTxPos pos(pindex->GetBlockPos(), GetSizeOfCompactSize(block.vtx.size()));
     std::vector<std::pair<uint256, CDiskTxPos> > vPos;
     vPos.reserve(block.vtx.size());
@@ -2029,9 +2039,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         const CTransaction &tx = *(block.vtx[i]);
         const uint256 txhash = tx.GetHash();
         nInputs += tx.vin.size();
-
+        if (tx.IsCoinBase())
+            nValueOut += tx.GetValueOut();
         if (!tx.IsCoinBase())
         {
+            
             if (!view.HaveInputs(tx))
                 return state.DoS(100, error("ConnectBlock(): inputs missing/spent"),
                                  REJECT_INVALID, "bad-txns-inputs-missingorspent");
@@ -2158,7 +2170,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     int64_t nTime3 = GetTimeMicros(); nTimeConnect += nTime3 - nTime2;
     LogPrint("bench", "      - Connect %u transactions: %.2fms (%.3fms/tx, %.3fms/txin) [%.2fs]\n", (unsigned)block.vtx.size(), 0.001 * (nTime3 - nTime2), 0.001 * (nTime3 - nTime2) / block.vtx.size(), nInputs <= 1 ? 0 : 0.001 * (nTime3 - nTime2) / (nInputs-1), nTimeConnect * 0.000001);
 
-    CAmount blockReward = nFees + GetBlockSubsidy(pindex->nHeight, chainparams.GetConsensus());
+    CAmount blockReward = nFees + GetBlockSubsidy(pindex->pprev, chainparams.GetConsensus());
     if (block.vtx[0]->GetValueOut() > blockReward)
         return state.DoS(100,
                          error("ConnectBlock(): coinbase pays too much (actual=%d vs limit=%d)",
@@ -2169,7 +2181,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return state.DoS(100, false);
     int64_t nTime4 = GetTimeMicros(); nTimeVerify += nTime4 - nTime2;
     LogPrint("bench", "    - Verify %u txins: %.2fms (%.3fms/txin) [%.2fs]\n", nInputs - 1, 0.001 * (nTime4 - nTime2), nInputs <= 1 ? 0 : 0.001 * (nTime4 - nTime2) / (nInputs-1), nTimeVerify * 0.000001);
-
+    pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut ;
     if (fJustCheck)
         return true;
 
