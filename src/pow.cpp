@@ -22,6 +22,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     
     // Only change once per difficulty adjustment interval
     // DifficultyAdjustmentInterval = nPowTargetTimespan (1day, 86400) / nPowTargetSpacing (1min, 60 )  = 1440
+    // 하루의 시간 만큼 예상해서 구동된다.
+    // 난이도 조절이 되지 않는다.
     if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)
     {
         if (params.fPowAllowMinDifficultyBlocks) //mainnet false, only test,regnet
@@ -46,6 +48,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // Go back by what we want to be 14 days worth of blocks
     // Ventas: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
+    // 하루치의 블럭시간을 계산한다. 설정에서 하루를 조절시간으로 설정했기에..
     int blockstogoback = params.DifficultyAdjustmentInterval()-1;
     if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval()) // nPowTargetTimespan / nPowTargetSpacing;
         blockstogoback = params.DifficultyAdjustmentInterval(); 
@@ -60,14 +63,19 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     return CalculateNextWorkRequired(pindexLast, pindexFirst->GetBlockTime(), params);
 }
 
+/**
+지정된 시간만큼으로 다음 난이도를 결정한다.
+**/
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
 {
+    // 난이도조절을 하지 않게 했다면...
     if (params.fPowNoRetargeting)//fPowNoRetargeting = false
         return pindexLast->nBits;
-
-    // Limit adjustment step
+    
+    // Limit adjustment step , 진짜로 이용된 시간.
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;//1 day time span 
     // 86400 / 4 = 6 hour , min 4hour
+    // 이용된 시간이 /4 작으면 /4 로 최소값과 최대값을 1/4 *4 로 제한한다.
     if (nActualTimespan < params.nPowTargetTimespan/4) //nPowTargetTimespan = 1day 86400
         nActualTimespan = params.nPowTargetTimespan/4;
     // max 4day
@@ -84,8 +92,8 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     bool fShift = bnNew.bits() > bnPowLimit.bits() - 1;
     if (fShift)
         bnNew >>= 1;
-    bnNew *= nActualTimespan;
-    bnNew /= params.nPowTargetTimespan;
+    bnNew *= nActualTimespan;//실제걸린시간.
+    bnNew /= params.nPowTargetTimespan;//예상한 시간.
     if (fShift)
         bnNew <<= 1;
 
@@ -105,13 +113,13 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
 
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)){
-        DbgMsg("fail1");
+        // DbgMsg("fail1");
         return false;
     }
 
     // Check proof of work matches claimed amount
     if (UintToArith256(hash) > bnTarget){ 
-        DbgMsg("fail2 hash:%s, target:%s" ,hash.ToString(), bnTarget.ToString() );
+       // DbgMsg("fail2 hash:%s, target:%s" ,hash.ToString(), bnTarget.ToString() );
         return false;
     }
 
