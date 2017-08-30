@@ -15,7 +15,47 @@
 #include <boost/assign/list_of.hpp>
 
 #include "chainparamsseeds.h"
+#include "arith_uint256.h"
 
+
+bool fSearchGenesis = true;
+
+
+void searchGenesis(CBlock genesis){
+    printf("Start Search Genesis\n");
+    arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
+    unsigned int startTime =  genesis.nTime;
+    unsigned int startNonce =  genesis.nNonce;
+    
+    uint256 thash;
+    while(true){
+        thash = genesis.GetPoWHash();
+        
+        if(UintToArith256(thash)<hashTarget){
+            printf("found...\n");
+            break;
+        }
+        if(genesis.nNonce%5000==0){
+            printf("nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+    
+        }
+        ++genesis.nNonce;
+        if (genesis.nNonce == 0)
+        {
+            printf("NONCE WRAPPED, incrementing time\n");
+            ++genesis.nTime;
+        }
+    }
+    
+    printf(" start block.nTime = %u \n",startTime );
+    printf(" start block.nNonce = %u \n", startNonce);
+    printf("block.nTime = %u \n", genesis.nTime);
+    printf("block.nNonce = %u \n", genesis.nNonce);
+    printf("block.GetHash = 0x%s\n", genesis.GetHash().ToString().c_str());
+    printf("block.PoWHash = 0x%s\n", genesis.GetPoWHash().ToString().c_str());
+    printf("block.hashMerkleRoot = 0x%s\n",   genesis.hashMerkleRoot.ToString().c_str());
+    exit(0);
+}
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     CMutableTransaction txNew;
@@ -122,10 +162,14 @@ public:
         nDefaultPort = 13101;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1501545600, 1088869, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1501545600,222228, 0x1e0fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x64d1570a2a6fda935fddfab84100768f8c652f2e9cb905d9c6ef1568409519d4"));
-        assert(genesis.hashMerkleRoot == uint256S("0x3b6fa639787c6a266d08a76639b8bc99dca8bb475ba876f0b30c6220b2098eed"));
+        if( uint256S("0x434a9142f951d9f54dab3d30b711e39597bfc38d6f8be163d7baa396080db7ba")!=genesis.GetHash()){
+            genesis.nNonce = 0;
+            searchGenesis(genesis);
+        }
+        assert(consensus.hashGenesisBlock == uint256S("0x434a9142f951d9f54dab3d30b711e39597bfc38d6f8be163d7baa396080db7ba"));
+        assert(genesis.hashMerkleRoot == uint256S("0x0ae7708e106c1af4481d9bfee0bd2dcd05ab073a798d59acda1bca47e52f7362"));
 
         vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -135,8 +179,8 @@ public:
         // vSeeds.push_back(CDNSSeedData("ventaspool.org", "dnsseed.ventaspool.org"));
         // vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,70);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,65);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,70);//V
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,132);//v
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
         base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,204);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
@@ -211,10 +255,14 @@ public:
         nDefaultPort = 13111;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1501545605, 1279701, 0x1e0fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1501545605, 1439468, 0x1e0fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000005b6056f93e9145b48244847c7ef9077eef1c576d6c1dfa4a634b54bd74f"));
-        assert(genesis.hashMerkleRoot == uint256S("0xa0b5a30e1c8faff26180cba6c9511ce58a72cf1e282e1121f18d9198b326dff5"));
+        if(uint256S("0xb9798adec10700fb0b6cf8c13d93576207be9ace06c93ab9e5ef50377bc7f2a3")!=genesis.GetHash()){
+            genesis.nNonce = 0;
+            searchGenesis(genesis);
+        }
+        assert(consensus.hashGenesisBlock == uint256S("0xb9798adec10700fb0b6cf8c13d93576207be9ace06c93ab9e5ef50377bc7f2a3"));
+        assert(genesis.hashMerkleRoot == uint256S("0x0ae7708e106c1af4481d9bfee0bd2dcd05ab073a798d59acda1bca47e52f7362"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -294,10 +342,14 @@ public:
         nDefaultPort = 13121;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1501545601, 4218848, 0x1e0fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1501545601, 1726915, 0x1e0fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x00000cc5693d4d55c77d3564f55cd6d792c730955796dc6a64accd59ae943f0f"));
-        assert(genesis.hashMerkleRoot == uint256S("0xec3411e81a522309829e0933569def13f6f7b45fafebfe96ccefb778fb7ef0c8"));
+        if(uint256S("0x690e1e5f21eed4fd0477829e9fbe4c0212c7d958596c77187f9bf70a27d5502f")!=genesis.GetHash()){
+            genesis.nNonce = 0;
+            searchGenesis(genesis);
+        }
+        assert(consensus.hashGenesisBlock == uint256S("0x690e1e5f21eed4fd0477829e9fbe4c0212c7d958596c77187f9bf70a27d5502f"));
+        assert(genesis.hashMerkleRoot == uint256S("0x0ae7708e106c1af4481d9bfee0bd2dcd05ab073a798d59acda1bca47e52f7362"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.

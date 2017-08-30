@@ -46,7 +46,7 @@ struct ChainTxData;
 
 struct PrecomputedTransactionData;
 struct LockPoints;
-
+static const int BLOCK_HEIGHT_INIT = 100;
 /** Default for DEFAULT_WHITELISTRELAY. */
 static const bool DEFAULT_WHITELISTRELAY = true;
 /** Default for DEFAULT_WHITELISTFORCERELAY. */

@@ -1207,8 +1207,10 @@ bool ReadBlockFromDisk(CBlock& block, const CDiskBlockPos& pos, const Consensus:
     }
 
     // Check the header
-    if (!CheckProofOfWork(block.GetPoWHash(), block.nBits, consensusParams))
+    if (!CheckProofOfWork(block.GetPoWHash(), block.nBits, consensusParams)){ 
+        DbgMsg("hash:%s pow:%s , %08x , %s",block.GetHash().ToString(), block.GetPoWHash().ToString(), block.nBits, pos.ToString());
         return error("ReadBlockFromDisk: Errors in block header at %s", pos.ToString());
+    }
 
     return true;
 }
@@ -1230,7 +1232,7 @@ CAmount GetBlockSubsidy(const CBlockIndex * pindexPrev , const Consensus::Params
     
     if(pindexPrev==NULL )
         nSubsidy = 5 * COIN;
-    else if(pindexPrev->nHeight <100){
+    else if(pindexPrev->nHeight <BLOCK_HEIGHT_INIT){
         nSubsidy = 14000000 * COIN; //
     }else{
         nSubsidy = 50 * COIN; //
