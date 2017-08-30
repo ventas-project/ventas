@@ -10,19 +10,21 @@
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
+#include "validation.h"
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
     // Genesis block
-    if (pindexLast == NULL)
+    if (pindexLast == NULL||pindexLast->nHeight+1<BLOCK_HEIGHT_INIT)
         return nProofOfWorkLimit;
-
+    
     // Only change once per difficulty adjustment interval
+    // DifficultyAdjustmentInterval = nPowTargetTimespan (1day, 86400) / nPowTargetSpacing (1min, 60 )  = 1440
     if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)
     {
-        if (params.fPowAllowMinDifficultyBlocks)
+        if (params.fPowAllowMinDifficultyBlocks) //mainnet false, only test,regnet
         {
             // Special difficulty rule for testnet:
             // If the new block's timestamp is more than 2* 10 minutes
@@ -45,10 +47,10 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // Ventas: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = params.DifficultyAdjustmentInterval()-1;
-    if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval())
-        blockstogoback = params.DifficultyAdjustmentInterval();
+    if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval()) // nPowTargetTimespan / nPowTargetSpacing;
+        blockstogoback = params.DifficultyAdjustmentInterval(); 
 
-    // Go back by what we want to be 14 days worth of blocks
+    // Go back by what we want to be 1 days worth of blocks
     const CBlockIndex* pindexFirst = pindexLast;
     for (int i = 0; pindexFirst && i < blockstogoback; i++)
         pindexFirst = pindexFirst->pprev;
@@ -60,13 +62,15 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
 {
-    if (params.fPowNoRetargeting)
+    if (params.fPowNoRetargeting)//fPowNoRetargeting = false
         return pindexLast->nBits;
 
     // Limit adjustment step
-    int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;
-    if (nActualTimespan < params.nPowTargetTimespan/4)
+    int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;//1 day time span 
+    // 86400 / 4 = 6 hour , min 4hour
+    if (nActualTimespan < params.nPowTargetTimespan/4) //nPowTargetTimespan = 1day 86400
         nActualTimespan = params.nPowTargetTimespan/4;
+    // max 4day
     if (nActualTimespan > params.nPowTargetTimespan*4)
         nActualTimespan = params.nPowTargetTimespan*4;
 
@@ -100,12 +104,16 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
 
     // Check range
-    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
+    if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit)){
+        DbgMsg("fail1");
         return false;
+    }
 
     // Check proof of work matches claimed amount
-    if (UintToArith256(hash) > bnTarget)
+    if (UintToArith256(hash) > bnTarget){ 
+        DbgMsg("fail2 hash:%s, target:%s" ,hash.ToString(), bnTarget.ToString() );
         return false;
+    }
 
     return true;
 }
