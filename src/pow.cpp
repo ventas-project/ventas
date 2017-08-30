@@ -24,14 +24,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // DifficultyAdjustmentInterval = nPowTargetTimespan (1day, 86400) / nPowTargetSpacing (1min, 60 )  = 1440
     // 하루의 시간 만큼 예상해서 구동된다.
     // 난이도 조절이 되지 않는다.
-    if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)
+    if ((pindexLast->nHeight+1) % params.DifficultyAdjustmentInterval() != 0)//특정주기에 도달하지 않으면... 매번 동작한다.
     {
         if (params.fPowAllowMinDifficultyBlocks) //mainnet false, only test,regnet
         {
             // Special difficulty rule for testnet:
             // If the new block's timestamp is more than 2* 10 minutes
             // then allow mining of a min-difficulty block.
-            if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*2)
+            if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*4)//4분... 아차피 동작하지 않지만...
                 return nProofOfWorkLimit;
             else
             {
@@ -42,13 +42,17 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
                 return pindex->nBits;
             }
         }
+        
         return pindexLast->nBits;
     }
+    
+    
 
     // Go back by what we want to be 14 days worth of blocks
     // Ventas: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     // 하루치의 블럭시간을 계산한다. 설정에서 하루를 조절시간으로 설정했기에..
+    // 하루치의 블럭시간에 도달하면 난이도를 조절한다.
     int blockstogoback = params.DifficultyAdjustmentInterval()-1;
     if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval()) // nPowTargetTimespan / nPowTargetSpacing;
         blockstogoback = params.DifficultyAdjustmentInterval(); 
