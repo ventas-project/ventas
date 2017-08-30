@@ -8,7 +8,7 @@ platform2=`uname -r`
 arch=`uname -m`
 ext=
 # options
-#options=" -reindex"
+#options="-debug=1 -reindex"
 options="-debug=1"
 printc=
 

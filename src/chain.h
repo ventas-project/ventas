@@ -11,7 +11,7 @@
 #include "pow.h"
 #include "tinyformat.h"
 #include "uint256.h"
-
+#include "utilmoneystr.h"
 #include <vector>
 
 class CBlockFileInfo
@@ -188,7 +188,7 @@ public:
     //! This value will be non-zero only if and only if transactions for this block and all its parents are available.
     //! Change to 64-bit type when necessary; won't happen before 2030
     unsigned int nChainTx;
-
+    int64_t nMoneySupply;
     //! Verification status of this block. See enum BlockStatus
     unsigned int nStatus;
 
@@ -226,6 +226,8 @@ public:
         nTime          = 0;
         nBits          = 0;
         nNonce         = 0;
+
+        nMoneySupply = 0;
     }
 
     CBlockIndex()
@@ -313,10 +315,11 @@ public:
 
     std::string ToString() const
     {
-        return strprintf("CBlockIndex(pprev=%p, nHeight=%d, merkle=%s, hashBlock=%s)",
+        return strprintf("CBlockIndex(pprev=%p, nHeight=%d, merkle=%s, hashBlock=%s, nMoneySupply=%s)",
             pprev, nHeight,
             hashMerkleRoot.ToString(),
-            GetBlockHash().ToString());
+            GetBlockHash().ToString(),
+            FormatMoney(nMoneySupply));
     }
 
     //! Check whether this block index entry is valid up to the passed validity level.
@@ -393,6 +396,7 @@ public:
         READWRITE(nTime);
         READWRITE(nBits);
         READWRITE(nNonce);
+        READWRITE(nMoneySupply);
     }
 
     uint256 GetBlockHash() const
