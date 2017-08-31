@@ -1,5 +1,4 @@
 #!/bin/sh
-#!/bin/sh
 coin=ventas
 version=1.0.0
 platform=`uname -a | awk '{print tolower($1)}'`
