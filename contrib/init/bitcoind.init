@@ -12,7 +12,7 @@
 . /etc/init.d/functions
 
 # you can override defaults in /etc/sysconfig/bitcoind, see below
-
+USER=etra
 RETVAL=0
 BITCOIND_OPTS=-daemon
 prog=ventasd
@@ -29,7 +29,7 @@ bitcoind_opts=${BITCOIND_OPTS--disablewallet}
 
 start() {
     echo -n $"Starting $prog: "
-    daemon $DAEMONOPTS $bitcoind $bitcoind_opts
+    daemon --user=$USER $DAEMONOPTS $bitcoind $bitcoind_opts
     RETVAL=$?
     echo
     [ $RETVAL -eq 0 ] && touch $lockfile
