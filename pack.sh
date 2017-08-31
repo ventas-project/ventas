@@ -28,6 +28,7 @@ cp src/${coin}d             tmp/${bitcoin_dir}/bin/${coin}d
 cp src/test/test_bitcoin    tmp/${bitcoin_dir}/bin/test_${coin}
 cp src/wallet-utility       tmp/${bitcoin_dir}/bin/
 cp src/qt/${coin}-qt        tmp/${bitcoin_dir}/bin/${coin}-qt
+cp ${coin}.conf             tmp/${bitcoin_dir}/bin/${coin}.conf
 cd tmp
 tar -zcvf ../${tarball_name} ./
 cd ../
