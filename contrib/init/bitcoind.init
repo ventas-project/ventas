@@ -12,13 +12,12 @@
 . /etc/init.d/functions
 
 # you can override defaults in /etc/sysconfig/bitcoind, see below
-if [ -f /etc/sysconfig/bitcoind ]; then
-        . /etc/sysconfig/bitcoind
-fi
 
 RETVAL=0
-
-prog=bitcoind
+BITCOIND_OPTS=-daemon
+prog=ventasd
+BITCOIND_PATH=/home/etra/ventas
+BITCOIND_BIN=$BITCOIND_PATH/ventasd
 # you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/bitcoind
 lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/bitcoind}
 
