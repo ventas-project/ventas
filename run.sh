@@ -1,5 +1,4 @@
 #!/bin/sh
-#!/bin/sh
 coin=ventas
 version=1.0.0
 platform=`uname -a | awk '{print tolower($1)}'`
@@ -12,13 +11,13 @@ ext=
 options="-debug=1"
 printc=
 
-if [ "${platform}" == "linux" ] || [ "${platform}" == "Linux" ]; then
+if test "${platform}" = "linux"  || test "${platform}" = "Linux" ; then
     printc='-printtoconsole'
     ext=''
     if [ "${platform2}"=="4.4.0-43-Microsoft" ]; then
         ext='.exe'
     fi
-elif [ "${platform}" == "darwin" ]; then
+elif test "${platform}" = "darwin" ; then
     printc='-printtoconsole'
     ext=''
 else
