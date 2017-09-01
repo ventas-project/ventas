@@ -134,12 +134,8 @@ public:
 
         vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("ventas.etra.kr", "seed.etra.kr",true));
-        // vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
-        // vSeeds.push_back(CDNSSeedData("ventastools.com", "dnsseed.ventastools.com"));
-        // vSeeds.push_back(CDNSSeedData("ventaspool.org", "dnsseed.ventaspool.org"));
-        // vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
-
+        vSeeds.push_back(CDNSSeedData("ventas-seed.etra.kr", "chain001.etra.kr",true));
+        
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,70);//V
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,132);//v
         base58Prefixes[SCRIPT_ADDRESS2] = std::vector<unsigned char>(1,50);
