@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.ventas.LitecoinPayment</string>
+      <string>com.ventas.VentasPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>ventas</string>

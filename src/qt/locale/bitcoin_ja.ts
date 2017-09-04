@@ -1057,7 +1057,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>SOCKS5 プロキシ経由でLitecoinネットワークに接続する</translation>
+        <translation>SOCKS5 プロキシ経由でVentasネットワークに接続する</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1097,7 +1097,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Tor秘匿サービスを利用するため、独立なSOCKS5プロキシ経由でLitecoinネットワークに接続する</translation>
+        <translation>Tor秘匿サービスを利用するため、独立なSOCKS5プロキシ経由でVentasネットワークに接続する</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1381,7 +1381,7 @@
     </message>
     <message>
         <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>Litecoinアドレスを入力してください (例 %1)</translation>
+        <translation>Ventasアドレスを入力してください (例 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1805,7 +1805,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ventas network.</source>
-        <translation>支払リクエストが開始された時に表示される、支払リクエストに添える任意のメッセージです。注意：メッセージはLitecoinネットワークを通じて、支払と共に送られるわけではありません。</translation>
+        <translation>支払リクエストが開始された時に表示される、支払リクエストに添える任意のメッセージです。注意：メッセージはVentasネットワークを通じて、支払と共に送られるわけではありません。</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2202,7 +2202,7 @@
     </message>
     <message>
         <source>Warning: Invalid Ventas address</source>
-        <translation>警告：無効なLitecoinアドレスです</translation>
+        <translation>警告：無効なVentasアドレスです</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2245,7 +2245,7 @@
     </message>
     <message>
         <source>The Ventas address to send the payment to</source>
-        <translation>支払の送金先Litecoinアドレス</translation>
+        <translation>支払の送金先Ventasアドレス</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2289,7 +2289,7 @@
     </message>
     <message>
         <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>ventas: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはLitecoinネットワークを通して送信されるわけではありません。</translation>
+        <translation>ventas: URIに添付されていたメッセージです。これは参照用としてトランザクションとともに保存されます。注意：このメッセージはVentasネットワークを通して送信されるわけではありません。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2338,7 +2338,7 @@
     </message>
     <message>
         <source>The Ventas address to sign the message with</source>
-        <translation>メッセージを署名するLitecoinアドレス</translation>
+        <translation>メッセージを署名するVentasアドレス</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2394,7 +2394,7 @@
     </message>
     <message>
         <source>The Ventas address the message was signed with</source>
-        <translation>メッセージの署名に使われたLitecoinアドレス</translation>
+        <translation>メッセージの署名に使われたVentasアドレス</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ventas address</source>

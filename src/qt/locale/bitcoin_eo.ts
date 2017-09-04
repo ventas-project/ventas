@@ -239,7 +239,7 @@
     </message>
     <message>
         <source>Ventas</source>
-        <translation>Litecoino</translation>
+        <translation>Ventaso</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -629,7 +629,7 @@
     </message>
     <message>
         <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi la kursilan pordon por Litecoino. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+        <translation>Aŭtomate malfermi la kursilan pordon por Ventaso. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1030,7 +1030,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Sendi Litecoinon</translation>
+        <translation>Sendi Ventason</translation>
     </message>
     <message>
         <source>Coin Control Features</source>

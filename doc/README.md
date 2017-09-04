@@ -31,7 +31,7 @@ Drag Ventas-Core to your applications folder, and then run Ventas-Core.
 * See the documentation at the [Ventas Wiki](https://ventas.info/)
 for help and more information.
 * Ask for help on [#ventas](http://webchat.freenode.net?channels=ventas) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=ventas).
-* Ask for help on the [LitecoinTalk](https://ventastalk.io/) forums.
+* Ask for help on the [VentasTalk](https://ventastalk.io/) forums.
 
 Building
 ---------------------
@@ -61,7 +61,7 @@ The Ventas repo's [root README](/README.md) contains relevant information on the
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [LitecoinTalk](https://ventastalk.io/) forums.
+* Discuss on the [VentasTalk](https://ventastalk.io/) forums.
 * Discuss general Ventas development on #ventas-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ventas-dev).
 
 ### Miscellaneous

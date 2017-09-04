@@ -2488,7 +2488,7 @@ Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadaw
     </message>
     <message>
         <source>Ventas Core</source>
-        <translation>Rdzeń Litecoina</translation>
+        <translation>Rdzeń Ventasa</translation>
     </message>
     <message>
         <source>The %s developers</source>

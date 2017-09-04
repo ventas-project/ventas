@@ -2945,7 +2945,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Litecoini Gönder</translation>
+        <translation>Ventasi Gönder</translation>
     </message>
 </context>
 <context>
