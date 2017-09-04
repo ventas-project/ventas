@@ -131,3 +131,4 @@ tmp/bitcoin-1.0.0/bin/bitcoin-cli
 .vscode/tasks.json
 .vscode/launch.json
 .vscode/settings.json
+wallet.dat

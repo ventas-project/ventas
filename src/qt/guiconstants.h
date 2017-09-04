@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Ventas"
-#define QAPP_ORG_DOMAIN "ventas.org"
+#define QAPP_ORG_DOMAIN "ventasnu.com"
 #define QAPP_APP_NAME_DEFAULT "Ventas-Qt"
 #define QAPP_APP_NAME_TESTNET "Ventas-Qt-testnet"
 
