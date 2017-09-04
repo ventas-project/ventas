@@ -365,7 +365,7 @@
     </message>
     <message>
         <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>Litecoinमा संलग्न गरिएको सन्देश: तपाईंको मध्यस्थको लागि कारोबारको साथमा भण्डारण गरिने URI । नोट: यो सन्देश Ventas नेटवर्क मार्फत पठाइने छैन ।</translation>
+        <translation>Ventasमा संलग्न गरिएको सन्देश: तपाईंको मध्यस्थको लागि कारोबारको साथमा भण्डारण गरिने URI । नोट: यो सन्देश Ventas नेटवर्क मार्फत पठाइने छैन ।</translation>
     </message>
     </context>
 <context>

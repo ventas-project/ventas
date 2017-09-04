@@ -168,8 +168,8 @@
         <translation>Potvrďte zašifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE LITECOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VENTAS&lt;/b&gt;!</source>
+        <translation>Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE VENTASY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -479,7 +479,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Ventas command-line options</source>
-        <translation>Ukáž %1 zoznam možných nastavení Litecoinu pomocou príkazového riadku</translation>
+        <translation>Ukáž %1 zoznam možných nastavení Ventasu pomocou príkazového riadku</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -1089,7 +1089,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Pripojiť k Litecoinovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
+        <translation>Pripojiť k Ventasovej sieti cez separované SOCKS5 proxy pre skrytú službu Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>

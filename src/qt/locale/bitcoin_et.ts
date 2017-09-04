@@ -168,8 +168,8 @@
         <translation>Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA LITECOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VENTAS&lt;/b&gt;!</source>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA VENTASID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Send coins to a Ventas address</source>
-        <translation>Saada münte Litecoini aadressile</translation>
+        <translation>Saada münte Ventasi aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -343,11 +343,11 @@
     </message>
     <message>
         <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Litecoini aadressiga</translation>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Ventasi aadressiga</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Litecoini aadressiga</translation>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Ventasi aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -379,7 +379,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n aktiivne ühendus Litecoini võrku</numerusform><numerusform>%n aktiivset ühendust Litecoini võrku</numerusform></translation>
+        <translation><numerusform>%n aktiivne ühendus Ventasi võrku</numerusform><numerusform>%n aktiivset ühendust Ventasi võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -757,7 +757,7 @@
     </message>
     <message>
         <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Litecoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <translation>Ventasi kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1450,7 +1450,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this Ventas address</source>
-        <translation>Allkirjasta sõnum Litecoini aadressi sulle kuulumise tõestamiseks</translation>
+        <translation>Allkirjasta sõnum Ventasi aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1474,7 +1474,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Litecoini aadressiga.</translation>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Ventasi aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1759,7 +1759,7 @@
     </message>
     <message>
         <source>Ventas Core</source>
-        <translation>Litecoini tuumik</translation>
+        <translation>Ventasi tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

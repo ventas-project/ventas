@@ -168,7 +168,7 @@
         <translation>Brieftaschen-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VENTAS&lt;/b&gt;!</source>
         <translation>Warnung: Wenn Sie Ihre Brieftasche verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;alle Ihre Ventas verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1097,7 +1097,7 @@
     </message>
     <message>
         <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Über einen separaten SOCKS5 Proxy für Tor Services mit dem Litecoint Netzwerk verbinden.</translation>
+        <translation>Über einen separaten SOCKS5 Proxy für Tor Services mit dem Ventast Netzwerk verbinden.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>

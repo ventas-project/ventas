@@ -169,7 +169,7 @@ Var vänlig och försök igen.</translation>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VENTAS&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA VENTAS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -1566,7 +1566,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ventas network.</source>
-        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Litecoinnätverket.</translation>
+        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över Ventasnätverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1878,7 +1878,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The Ventas address to send the payment to</source>
-        <translation>Litecoinadress att sända betalning till</translation>
+        <translation>Ventasadress att sända betalning till</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1922,7 +1922,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>Ett meddelande som bifogades ventas-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Litecoinnätverket.</translation>
+        <translation>Ett meddelande som bifogades ventas-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över Ventasnätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1967,7 +1967,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The Ventas address to sign the message with</source>
-        <translation>Litecoinadress att signera meddelandet med</translation>
+        <translation>Ventasadress att signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2023,7 +2023,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The Ventas address the message was signed with</source>
-        <translation>Litecoinadressen som meddelandet signerades med</translation>
+        <translation>Ventasadressen som meddelandet signerades med</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ventas address</source>

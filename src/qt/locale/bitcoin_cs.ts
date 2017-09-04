@@ -168,8 +168,8 @@
         <translation>Potvrď zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
-        <translation>Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY LITECOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR VENTAS&lt;/b&gt;!</source>
+        <translation>Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY VENTASY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -479,7 +479,7 @@
     </message>
     <message>
         <source>Show the %1 help message to get a list with possible Ventas command-line options</source>
-        <translation>Seznam argumentů Litecoinu pro příkazovou řádku získáš v nápovědě %1</translation>
+        <translation>Seznam argumentů Ventasu pro příkazovou řádku získáš v nápovědě %1</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -2245,7 +2245,7 @@
     </message>
     <message>
         <source>The Ventas address to send the payment to</source>
-        <translation>Litecoinová adresa příjemce</translation>
+        <translation>Ventasová adresa příjemce</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2338,7 +2338,7 @@
     </message>
     <message>
         <source>The Ventas address to sign the message with</source>
-        <translation>Litecoinová adresa, kterou se zpráva podepíše</translation>
+        <translation>Ventasová adresa, kterou se zpráva podepíše</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2394,7 +2394,7 @@
     </message>
     <message>
         <source>The Ventas address the message was signed with</source>
-        <translation>Litecoinová adresa, kterou je zpráva podepsána</translation>
+        <translation>Ventasová adresa, kterou je zpráva podepsána</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Ventas address</source>
