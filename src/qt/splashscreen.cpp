@@ -31,7 +31,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
 {
     // set reference point, paddings
     int paddingRight            = 50;
-    int paddingTop              = 50;
+    int paddingTop              = 180;
     int titleVersionVSpace      = 17;
     int titleCopyrightVSpace    = 40;
 
@@ -69,11 +69,16 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     pixPaint.fillRect(rGradient, gradient);
 
     // draw the bitcoin icon, expected size of PNG: 1024x1024
-    QRect rectIcon(QPoint(-150,-122), QSize(430,430));
+    QRect rectIcon(QPoint(-20,0), QSize(512,128));
 
-    const QSize requiredSize(1024,1024);
-    QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
-
+    const QSize requiredSize(512,128);
+    // QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
+    QPixmap pixmap2;
+    QIcon appIcon;
+    pixmap2.load(":/icons/ventas_splash");
+    appIcon = QIcon(pixmap2);
+    
+    QPixmap icon(appIcon.pixmap(requiredSize));
     pixPaint.drawPixmap(rectIcon, icon);
 
     // check font size and drawing with
@@ -98,6 +103,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
         pixPaint.setFont(QFont(font, 10*fontFactor));
         titleVersionVSpace -= 5;
     }
+    
     pixPaint.drawText(pixmap.width()/devicePixelRatio-titleTextWidth-paddingRight+2,paddingTop+titleVersionVSpace,versionText);
 
     // draw copyright stuff
