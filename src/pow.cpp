@@ -52,7 +52,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     //every time set retarget...
     //
     if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*5){//1min *5 no block, will reset difficulty
-        LogPrint("mine", "too old net... gap: %08x" ,pblock->GetBlockTime() - pindexLast->GetBlockTime() , nProofOfWorkLimit);
+        LogPrint("mine", "too old net... gap:%s sec, %08x" ,pblock->GetBlockTime() - pindexLast->GetBlockTime() , nProofOfWorkLimit);
         return nProofOfWorkLimit;
     }
     //too fast
