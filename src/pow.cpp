@@ -17,7 +17,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
     // Genesis block
-    if (pindexLast == NULL||pindexLast->nHeight+1<BLOCK_HEIGHT_INIT){ 
+    if (pindexLast == NULL||pindexLast->nHeight < ( BLOCK_HEIGHT_INIT +1 )) { 
         LogPrint("mine", "init Limit %d ,%d\n" ,pindexLast->nHeight ,BLOCK_HEIGHT_INIT);
         return nProofOfWorkLimit;
     }
@@ -52,13 +52,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     //every time set retarget...
     //
     if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*5){//1min *5 no block, will reset difficulty
-        LogPrint("mine", "too old net... gap:%s sec, new:%08x , prev:%08x \n" ,pblock->GetBlockTime() - pindexLast->GetBlockTime() , nProofOfWorkLimit,pindexLast->nBits );
+        LogPrint("mine", "%d too old net... gap:%s sec, new:%08x , prev:%08x \n" ,pindexLast->nHeight,
+            pblock->GetBlockTime() - pindexLast->GetBlockTime() , nProofOfWorkLimit,pindexLast->nBits );
         return nProofOfWorkLimit;
     }
     //too fast
     if (pblock->GetBlockTime() <  ( pindexLast->GetBlockTime() +  params.nPowTargetSpacing/3)){
         unsigned int ret =pindexLast->nBits >> 16;
-        LogPrint("mine", "too fast block %08x\n ", ret);
+        LogPrint("mine", "prevhieght:%d too fast block %08x\n ",pindexLast->nHeight, ret);
         return ret;
     }
     

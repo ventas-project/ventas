@@ -1,7 +1,12 @@
 #!/bin/sh
 timestamp=$( date +%Y%m%d-%H%M%S )
+datadir=data
+corename=ventas
 echo $timestamp
-cp data/wallet.dat ./wallet.dat.$timestamp
-rm -Rf ./data/*
-cp *.conf ./data/
-cp ./wallet.dat.$timestamp ./data/wallet.dat
+cp ${datadir}/wallet.dat ./wallet.dat.$timestamp
+cp ${datadir}/${corename}.conf ./${corename}.conf.$timestamp
+ 
+rm -Rf ${datadir}/*
+cp *.conf ${datadir}/
+cp ./wallet.dat.$timestamp ${datadir}/wallet.dat
+mv ./${corename}.conf.$timestamp ${datadir}/${corename}.conf 
