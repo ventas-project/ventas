@@ -90,7 +90,7 @@ public:
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
         consensus.nPowTargetTimespan = 1 * 1 * 60 * 60; // 1 hour  sec
         consensus.nPowTargetSpacing = 1 * 60;//1min
-        consensus.fPowAllowMinDifficultyBlocks = true;//set to min diff
+       // consensus.fPowAllowMinDifficultyBlocks = true;//set to min diff
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
         consensus.nMinerConfirmationWindow = 5760; // nPowTargetTimespan / nPowTargetSpacing * 4
@@ -119,10 +119,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 32-bit integer with any alignment.
          */
-        pchMessageStart[0] = 0x76;//v
-        pchMessageStart[1] = 0x65;//e
-        pchMessageStart[2] = 0x6e;//n
-        pchMessageStart[3] = 0x74;//t
+        pchMessageStart[0] = 0x76;
+        pchMessageStart[1] = 0x65;
+        pchMessageStart[2] = 0x6e;
+        pchMessageStart[3] = 0x74;
         nDefaultPort = 13101;
         nPruneAfterHeight = 100000;
 
@@ -134,7 +134,7 @@ public:
 
         vSeeds.clear();
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("ventas-seed.etra.kr", "chain001.etra.kr",true));
+        // vSeeds.push_back(CDNSSeedData("ventas-seed.etra.kr", "chain001.etra.kr",true));
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,70);//V
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,132);//v
@@ -145,7 +145,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
@@ -181,7 +181,7 @@ public:
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // 3.5 days
         consensus.nPowTargetSpacing = 2.5 * 60;
-        consensus.fPowAllowMinDifficultyBlocks = true;
+     //   consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
         consensus.nMinerConfirmationWindow = 2016; // nPowTargetTimespan / nPowTargetSpacing
@@ -205,10 +205,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x43a16a626ef2ffdbe928f2bc26dcd5475c6a1a04f9542dfc6a0a88e5fcf9bd4c"); //8711
 
-        pchMessageStart[0] = 0x76;//v
-        pchMessageStart[1] = 0x65;//e
-        pchMessageStart[2] = 0x6e;//n
-        pchMessageStart[3] = 0x74;//t
+        pchMessageStart[0] = 0x76;
+        pchMessageStart[1] = 0x65;
+        pchMessageStart[2] = 0x6e;
+        pchMessageStart[3] = 0x74;
         nDefaultPort = 13111;
         nPruneAfterHeight = 1000;
 
@@ -269,7 +269,7 @@ public:
         consensus.powLimit = uint256S("7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 3.5 * 24 * 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 2.5 * 60;
-        consensus.fPowAllowMinDifficultyBlocks = true;
+     //   consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = true;
         consensus.nRuleChangeActivationThreshold = 108; // 75% for testchains
         consensus.nMinerConfirmationWindow = 144; // Faster than normal for regtest (144 instead of 2016)
@@ -289,10 +289,10 @@ public:
         // By default assume that the signatures in ancestors of this block are valid.
         consensus.defaultAssumeValid = uint256S("0x00");
 
-        pchMessageStart[0] = 0x76;//v
-         pchMessageStart[1] = 0x65;//e
-         pchMessageStart[2] = 0x6e;//n
-         pchMessageStart[3] = 0x74;//t
+        pchMessageStart[0] = 0x76;
+         pchMessageStart[1] = 0x65;
+         pchMessageStart[2] = 0x6e;
+         pchMessageStart[3] = 0x74;
         nDefaultPort = 13121;
         nPruneAfterHeight = 1000;
 

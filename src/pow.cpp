@@ -17,8 +17,10 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
     // Genesis block
-    if (pindexLast == NULL||pindexLast->nHeight+1<BLOCK_HEIGHT_INIT)
+    if (pindexLast == NULL||pindexLast->nHeight+1<BLOCK_HEIGHT_INIT){ 
+        LogPrint("mine", "init Limit %d ,%d\n" ,pindexLast->nHeight ,BLOCK_HEIGHT_INIT);
         return nProofOfWorkLimit;
+    }
     
     // Only change once per difficulty adjustment interval
     // DifficultyAdjustmentInterval = nPowTargetTimespan (1day, 86400) / nPowTargetSpacing (1min, 60 )  = 1440
@@ -49,22 +51,29 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     //every time set retarget...
     //
-    if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*4)//4분... 아차피 동작하지 않지만...
+    if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*5){//1min no block, will reset difficulty
+        DbgMsg("too old net...");
         return nProofOfWorkLimit;
-
+    }
+    //too fast
+    if ((pblock->GetBlockTime() - pindexLast->GetBlockTime() )<  params.nPowTargetSpacing/4){
+        unsigned int ret =pindexLast->nBits >> 4;
+        DbgMsg(" return %08x ", ret);
+        return ret;
+    }
     
 
     // Go back by what we want to be 14 days worth of blocks
     // Ventas: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
-    // 하루치의 블럭시간을 계산한다. 설정에서 하루를 조절시간으로 설정했기에..
-    // 하루치의 블럭시간에 도달하면 난이도를 조절한다.
+    //
     int blockstogoback = params.DifficultyAdjustmentInterval()-1;
     if ((pindexLast->nHeight+1) != params.DifficultyAdjustmentInterval()) // nPowTargetTimespan / nPowTargetSpacing;
         blockstogoback = params.DifficultyAdjustmentInterval(); 
 
     // Go back by what we want to be 1 days worth of blocks
     const CBlockIndex* pindexFirst = pindexLast;
+    DbgMsg("check Prev blk cnt: %d " , blockstogoback);
     for (int i = 0; pindexFirst && i < blockstogoback; i++)
         pindexFirst = pindexFirst->pprev;
 
@@ -79,11 +88,17 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params& params)
 {
     // 난이도조절을 하지 않게 했다면...
-    if (params.fPowNoRetargeting)//fPowNoRetargeting = false
+    if (params.fPowNoRetargeting){//fPowNoRetargeting = false
+        LogPrint("mine", "noRetargeting\n");
         return pindexLast->nBits;
+    }
     
     // Limit adjustment step , 진짜로 이용된 시간.
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;//1 day time span 
+    DbgMsg("blockTime:%d , firstBlockTime:%d ,actualTimeSpan:%d " ,
+          
+            pindexLast->GetBlockTime() ,
+             nFirstBlockTime,  nActualTimespan  );
     // 86400 / 4 = 6 hour , min 4hour
     // 이용된 시간이 /4 작으면 /4 로 최소값과 최대값을 1/4 *4 로 제한한다.
     if (nActualTimespan < params.nPowTargetTimespan/4) //nPowTargetTimespan = 1day 86400
@@ -91,25 +106,42 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     // max 4day
     if (nActualTimespan > params.nPowTargetTimespan*4)
         nActualTimespan = params.nPowTargetTimespan*4;
-
+    DbgMsg("mod timespan:%d" , nActualTimespan);
     // Retarget
     arith_uint256 bnNew;
     arith_uint256 bnOld;
     bnNew.SetCompact(pindexLast->nBits);
+    DbgMsg("bnNew %08x", bnNew.GetCompact());
     bnOld = bnNew;
+
     // Ventas: intermediate uint256 can overflow by 1 bit
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     bool fShift = bnNew.bits() > bnPowLimit.bits() - 1;
-    if (fShift)
+    DbgMsg(" bnNew.bits(%d) > bnPowLimit.bits(%d)  shift:%s" , bnNew.bits() , bnPowLimit.bits(),fShift?"yes":"no" );
+    if (fShift){
         bnNew >>= 1;
+        DbgMsg("bnNew shift %08x", bnNew.GetCompact());
+    }
     bnNew *= nActualTimespan;//실제걸린시간.
+    DbgMsg("bnNew * %08x  nActual:%d", bnNew.GetCompact() , nActualTimespan);
     bnNew /= params.nPowTargetTimespan;//예상한 시간.
-    if (fShift)
+    DbgMsg("bnNew . %08x  nActual:%d", bnNew.GetCompact() , nActualTimespan);
+    if (fShift){ 
         bnNew <<= 1;
+        DbgMsg("bnNew shift %08x", bnNew.GetCompact());
+    }
 
-    if (bnNew > bnPowLimit)
+    if (bnNew > bnPowLimit){ 
+        DbgMsg("bnNew reset * %08x ", bnNew.GetCompact());
         bnNew = bnPowLimit;
-
+        DbgMsg("bnNew reset * %08x ", bnNew.GetCompact());
+    }
+    LogPrint("mine", "init:%08x,   prevBit:%08x ,new Bits %08x\n\tnew:%s\n\tpre:%s\n" ,
+            bnPowLimit.GetCompact(), 
+            pindexLast->nBits,
+            bnNew.GetCompact() ,
+            bnNew.ToString() ,
+            bnOld.ToString() );
     return bnNew.GetCompact();
 }
 
