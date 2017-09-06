@@ -51,14 +51,14 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     //every time set retarget...
     //
-    if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*5){//1min no block, will reset difficulty
-        DbgMsg("too old net...");
+    if (pblock->GetBlockTime() > pindexLast->GetBlockTime() + params.nPowTargetSpacing*5){//1min *5 no block, will reset difficulty
+        LogPrint("mine", "too old net... gap: %08x" ,pblock->GetBlockTime() - pindexLast->GetBlockTime() , nProofOfWorkLimit);
         return nProofOfWorkLimit;
     }
     //too fast
-    if ((pblock->GetBlockTime() - pindexLast->GetBlockTime() )<  params.nPowTargetSpacing/4){
-        unsigned int ret =pindexLast->nBits >> 4;
-        DbgMsg(" return %08x ", ret);
+    if (pblock->GetBlockTime() <  ( pindexLast->GetBlockTime() +  params.nPowTargetSpacing/3)){
+        unsigned int ret =pindexLast->nBits >> 16;
+        LogPrint("mine",("=========================== to fast block %08x ", ret);
         return ret;
     }
     
@@ -73,7 +73,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     // Go back by what we want to be 1 days worth of blocks
     const CBlockIndex* pindexFirst = pindexLast;
-    DbgMsg("check Prev blk cnt: %d " , blockstogoback);
+    
     for (int i = 0; pindexFirst && i < blockstogoback; i++)
         pindexFirst = pindexFirst->pprev;
 
@@ -95,10 +95,6 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     
     // Limit adjustment step , 진짜로 이용된 시간.
     int64_t nActualTimespan = pindexLast->GetBlockTime() - nFirstBlockTime;//1 day time span 
-    DbgMsg("blockTime:%d , firstBlockTime:%d ,actualTimeSpan:%d " ,
-          
-            pindexLast->GetBlockTime() ,
-             nFirstBlockTime,  nActualTimespan  );
     // 86400 / 4 = 6 hour , min 4hour
     // 이용된 시간이 /4 작으면 /4 로 최소값과 최대값을 1/4 *4 로 제한한다.
     if (nActualTimespan < params.nPowTargetTimespan/4) //nPowTargetTimespan = 1day 86400
@@ -106,42 +102,28 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     // max 4day
     if (nActualTimespan > params.nPowTargetTimespan*4)
         nActualTimespan = params.nPowTargetTimespan*4;
-    DbgMsg("mod timespan:%d" , nActualTimespan);
     // Retarget
     arith_uint256 bnNew;
     arith_uint256 bnOld;
     bnNew.SetCompact(pindexLast->nBits);
-    DbgMsg("bnNew %08x", bnNew.GetCompact());
+    
     bnOld = bnNew;
 
     // Ventas: intermediate uint256 can overflow by 1 bit
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     bool fShift = bnNew.bits() > bnPowLimit.bits() - 1;
-    DbgMsg(" bnNew.bits(%d) > bnPowLimit.bits(%d)  shift:%s" , bnNew.bits() , bnPowLimit.bits(),fShift?"yes":"no" );
     if (fShift){
         bnNew >>= 1;
-        DbgMsg("bnNew shift %08x", bnNew.GetCompact());
     }
     bnNew *= nActualTimespan;//실제걸린시간.
-    DbgMsg("bnNew * %08x  nActual:%d", bnNew.GetCompact() , nActualTimespan);
     bnNew /= params.nPowTargetTimespan;//예상한 시간.
-    DbgMsg("bnNew . %08x  nActual:%d", bnNew.GetCompact() , nActualTimespan);
     if (fShift){ 
         bnNew <<= 1;
-        DbgMsg("bnNew shift %08x", bnNew.GetCompact());
     }
 
     if (bnNew > bnPowLimit){ 
-        DbgMsg("bnNew reset * %08x ", bnNew.GetCompact());
         bnNew = bnPowLimit;
-        DbgMsg("bnNew reset * %08x ", bnNew.GetCompact());
     }
-    LogPrint("mine", "init:%08x,   prevBit:%08x ,new Bits %08x\n\tnew:%s\n\tpre:%s\n" ,
-            bnPowLimit.GetCompact(), 
-            pindexLast->nBits,
-            bnNew.GetCompact() ,
-            bnNew.ToString() ,
-            bnOld.ToString() );
     return bnNew.GetCompact();
 }
 

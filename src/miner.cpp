@@ -71,6 +71,7 @@ int64_t UpdateTime(CBlockHeader* pblock, const Consensus::Params& consensusParam
     //     pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, consensusParams);
     //     DbgMsg("nBit %08x", pblock->nBits);
     // }
+    pblock->nBits = GetNextWorkRequired(pindexPrev, pblock, consensusParams);
     return nNewTime - nOldTime;
 }
 

@@ -98,7 +98,7 @@ UniValue getnetworkhashps(const JSONRPCRequest& request)
 
 UniValue generateBlocks(boost::shared_ptr<CReserveScript> coinbaseScript, int nGenerate, uint64_t nMaxTries, bool keepScript)
 {
-    static const int nInnerLoopCount = 0x10000;
+    static const int nInnerLoopCount = 0x1000000;
     int nHeightStart = 0;
     int nHeightEnd = 0;
     int nHeight = 0;
@@ -121,10 +121,10 @@ UniValue generateBlocks(boost::shared_ptr<CReserveScript> coinbaseScript, int nG
             LOCK(cs_main);
             IncrementExtraNonce(pblock, chainActive.Tip(), nExtraNonce);
         }
-        unsigned int nCnt =0;
+        
         while (nMaxTries > 0 && pblock->nNonce < nInnerLoopCount && !CheckProofOfWork(pblock->GetPoWHash(), pblock->nBits, Params().GetConsensus())) {
-            if(nCnt++%10000==0){
-                DbgMsg("Search %u \n%s" ,nCnt-1,pblock->ToString() );
+            if(nMaxTries%10000==0){
+                DbgMsg("Search %u \n%s" ,nMaxTries,pblock->ToString() );
             }
             ++pblock->nNonce;
             --nMaxTries;

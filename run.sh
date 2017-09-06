@@ -8,7 +8,7 @@ arch=`uname -m`
 ext=
 # options
 #options="-debug=1 -reindex"
-options="-forcednsseed -debug=1"
+options=" -debug=1"
 printc=
 
 if test "${platform}" = "linux"  || test "${platform}" = "Linux" ; then
