@@ -3,6 +3,7 @@ settings.json
 launch.json
 tasks.json
 *.exe
+data_copy
 data/*
 tmp/*
 src/ventas
