@@ -58,7 +58,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     //too fast
     if (pblock->GetBlockTime() <  ( pindexLast->GetBlockTime() +  params.nPowTargetSpacing/3)){
         unsigned int ret =pindexLast->nBits >> 16;
-        LogPrint("mine",("=========================== to fast block %08x ", ret);
+        LogPrint("mine", "too fast block %08x ", ret);
         return ret;
     }
     
