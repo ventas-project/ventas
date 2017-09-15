@@ -2719,6 +2719,7 @@ bool CWallet::CreateTransaction(const vector<CRecipient>& vecSend, CWalletTx& wt
         if (GetTransactionWeight(wtxNew) >= MAX_STANDARD_TX_WEIGHT)
         {
             strFailReason = _("Transaction too large");
+            DbgMsg("Transaction too large cur: %d , max: %d ",GetTransactionWeight(wtxNew) , MAX_STANDARD_TX_WEIGHT);
             return false;
         }
     }
