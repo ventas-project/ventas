@@ -2072,7 +2072,6 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
                     if (fAddressIndex && addressType > 0) {
                         // record spending activity
-                        DbgMsg("Add Address: %s %s" ,hashBytes.ToString() , txhash.ToString() );
                         addressIndex.push_back(make_pair(CAddressIndexKey(addressType, hashBytes, pindex->nHeight, i, txhash, j, true), prevout.nValue * -1));
 
                         // remove address from unspent index

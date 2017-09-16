@@ -329,7 +329,6 @@ UniValue getrawtransaction(const JSONRPCRequest& request)
     string strHex = EncodeHexTx(*tx, RPCSerializationFlags());
 
     if (!fVerbose){ 
-        DbgMsg("%s : %s" , hash.ToString() , strHex);
         return strHex;
     }
 
