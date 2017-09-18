@@ -8,7 +8,7 @@ tarname=temp.tar
 # delete file
 rm -Rf $tarname
 orgdir=`pwd`
-gitdir=~/dev/blockchain/github/ventas-project/ventas
+gitdir=~/dev/blockchain/github/ventas-project/ventas-git
 srcdir=./
 
 # copy to gitdir
