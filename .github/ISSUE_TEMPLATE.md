@@ -2,7 +2,7 @@
 
 This issue tracker is only for technical issues related to ventas-core.
 
-General ventas questions and/or support requests and are best directed to the [ventastalk.io forums](https://ventastalk.io/).
+General ventas questions and/or support requests and are best directed to the [ventasnu.com forums](http://www.ventasnu.com/).
 
 For reporting security issues, please contact the Ventas developers on the #ventas-dev Freenode IRC channel or alternatively you can email us at contact@ventasnu.com.
 
