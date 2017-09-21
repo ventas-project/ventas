@@ -3,7 +3,7 @@ Ventas Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/ventas-project/ventas.svg?branch=master)](https://travis-ci.org/ventas-project/ventas)
 
-https://ventasnu.com
+http://www.ventasnu.com
 
 What is Ventas?
 ----------------
@@ -15,7 +15,7 @@ out collectively by the network. Ventas Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Ventas Core software, see [https://ventasnu.com](https://ventasnu.com).
+the Ventas Core software, see [http://www.ventasnu.com](http://www.ventasnu.com).
 
 License
 -------
