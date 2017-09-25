@@ -1238,7 +1238,7 @@ CAmount GetBlockSubsidy(const CBlockIndex * pindexPrev , const Consensus::Params
         nSubsidy = 50 * COIN; //
     }
     //limit of reward
-	if (pindexPrev != NULL && (pindexPrev->nMoneySupply + nSubsidy) >= MAX_MONEY) {
+    if (pindexPrev != NULL && (pindexPrev->nMoneySupply + nSubsidy) >= MAX_MONEY) {
 		LogPrintf("Max Money.... no more reward[pow]\n");
 		nSubsidy = 0;
 	}
@@ -2182,7 +2182,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return state.DoS(100, false);
     int64_t nTime4 = GetTimeMicros(); nTimeVerify += nTime4 - nTime2;
     LogPrint("bench", "    - Verify %u txins: %.2fms (%.3fms/txin) [%.2fs]\n", nInputs - 1, 0.001 * (nTime4 - nTime2), nInputs <= 1 ? 0 : 0.001 * (nTime4 - nTime2) / (nInputs-1), nTimeVerify * 0.000001);
-    pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut ;
+    //pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut ;
+    pindex->nMoneySupply = ( ( BLOCK_HEIGHT_INIT * 14000000 ) + (50 * pindex->nHeight) ) * COIN; 
+    // DbgMsg("moneySupply prev:%u :%u  ,%d " , pindex->pprev->nMoneySupply, (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut , nValueOut );
+    // DbgMsg("%u %u %d " ,pindex->nMoneySupply,
+    // ( BLOCK_HEIGHT_INIT * 14000000 ) + (50 * pindex->nHeight), pindex->nHeight );
+    // exit(0);
     if (fJustCheck)
         return true;
 

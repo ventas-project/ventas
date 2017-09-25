@@ -88,7 +88,7 @@ UniValue getinfo(const JSONRPCRequest& request)
         obj.push_back(Pair("balance",       ValueFromAmount(pwalletMain->GetBalance())));
     }
 #endif
-obj.push_back(Pair("moneysupply",   ValueFromAmount(pindexBestHeader->nMoneySupply)));
+    obj.push_back(Pair("moneysupply",   ValueFromAmount(pindexBestHeader->nMoneySupply)));
     obj.push_back(Pair("blocks",        (int)chainActive.Height()));
     obj.push_back(Pair("timeoffset",    GetTimeOffset()));
     if(g_connman)
@@ -106,6 +106,7 @@ obj.push_back(Pair("moneysupply",   ValueFromAmount(pindexBestHeader->nMoneySupp
     obj.push_back(Pair("paytxfee",      ValueFromAmount(payTxFee.GetFeePerK())));
 #endif
     obj.push_back(Pair("relayfee",      ValueFromAmount(::minRelayTxFee.GetFeePerK())));
+    obj.push_back(Pair("maxmoney",      ValueFromAmount(MAX_MONEY)));
     obj.push_back(Pair("errors",        GetWarnings("statusbar")));
     return obj;
 }
