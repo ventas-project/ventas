@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Ventas-Qt</string>
+  <string>VENTAS-Qt</string>
   
   <key>CFBundleName</key>
-  <string>Ventas-Qt</string>
+  <string>VENTAS-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>com.ventas.Ventas-Qt</string>
+  <string>com.ventas.VENTAS-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,7 +46,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.ventas.VentasPayment</string>
+      <string>com.ventas.VENTASPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>ventas</string>
@@ -60,7 +60,7 @@
       <key>UTTypeIdentifier</key>
       <string>com.ventas.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Ventas payment request</string>
+      <string>VENTAS payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>

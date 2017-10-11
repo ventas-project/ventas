@@ -54,8 +54,8 @@
         <translation>&amp;Odaberi</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Ovo su vaše Ventas adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
+        <source>These are your VENTAS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Ovo su vaše VENTAS adrese za slanje novca. Uvijek provjerite iznos i adresu primatelja prije slanja novca.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -174,7 +174,7 @@
         <translation>Re-indeksiranje blokova na disku...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
+        <source>Send coins to a VENTAS address</source>
         <translation>Slanje novca na ventas adresu</translation>
     </message>
     <message>
@@ -198,8 +198,8 @@
         <translation>&amp;Potvrdite poruku...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -226,11 +226,11 @@
         <translation>Šifriranje privatnih ključeva koji u novčaniku</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
         <translation>Poruku potpišemo s ventas adresom, kako bi dokazali vlasništvo nad tom adresom</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
         <translation>Provjeravanje poruke, kao dokaz, da je potpisana navedenom ventas adresom</translation>
     </message>
     <message>
@@ -270,8 +270,8 @@
         <translation>Opcije &amp;naredbene linije</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n aktivna veza na Ventas mrežu</numerusform><numerusform>%n aktivnih veza na Ventas mrežu</numerusform><numerusform>%n aktivnih veza na Ventas mrežu</numerusform></translation>
+        <source>%n active connection(s) to VENTAS network</source>
+        <translation><numerusform>%n aktivna veza na VENTAS mrežu</numerusform><numerusform>%n aktivnih veza na VENTAS mrežu</numerusform><numerusform>%n aktivnih veza na VENTAS mrežu</numerusform></translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>
@@ -427,7 +427,7 @@
     </message>
     <message>
         <source>The address associated with this address list entry. This can only be modified for sending addresses.</source>
-        <translation>Ventas adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
+        <translation>VENTAS adresa. Izmjene adrese su moguće samo za adrese za slanje.</translation>
     </message>
     <message>
         <source>&amp;Address</source>
@@ -568,8 +568,8 @@
         <translation>&amp;Trošenje nepotvrđenih vraćenih iznosa</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatski otvori port Ventas klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatski otvori port VENTAS klijenta na ruteru. To radi samo ako ruter podržava UPnP i ako je omogućen.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -643,8 +643,8 @@
         <translation>Oblik</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s Ventas mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazani podatci mogu biti zastarjeli. Vaš novčanik se automatski sinkronizira s VENTAS mrežom kada je veza uspostavljena, ali taj proces još nije završen.</translation>
     </message>
     <message>
         <source>Total:</source>
@@ -1034,8 +1034,8 @@
         <translation>Izvršavaj u pozadini kao uslužnik i prihvaćaj komande</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>Block creation options:</source>

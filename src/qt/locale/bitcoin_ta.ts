@@ -90,8 +90,8 @@
         <translation>&amp;செய்தியை சரிசெய்...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -708,8 +708,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas மையம்</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS மையம்</translation>
     </message>
     <message>
         <source>(default: %u)</source>

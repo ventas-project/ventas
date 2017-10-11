@@ -114,8 +114,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Enviar monedas a una dirección Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Enviar monedas a una dirección VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +130,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +158,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Ventas para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones VENTAS para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Ventas especificas</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones VENTAS especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -608,8 +608,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

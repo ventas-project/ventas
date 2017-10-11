@@ -186,8 +186,8 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Gửi coins đến tài khoản Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Gửi coins đến tài khoản VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -206,8 +206,8 @@
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -234,12 +234,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Dùng địa chỉ Ventas của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Dùng địa chỉ VENTAS của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Ventas xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ VENTAS xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -259,7 +259,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ventas: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Ventas: URLs)</translation>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ VENTAS: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -536,8 +536,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ Ventas thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the VENTAS network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ VENTAS thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1018,8 +1018,8 @@
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

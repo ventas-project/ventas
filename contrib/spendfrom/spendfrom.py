@@ -38,9 +38,9 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the ventas data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/Ventas/")
+        return os.path.expanduser("~/Library/Application Support/VENTAS/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "Ventas")
+        return os.path.join(os.environ['APPDATA'], "VENTAS")
     return os.path.expanduser("~/.ventas")
 
 def read_bitcoin_config(dbdir):

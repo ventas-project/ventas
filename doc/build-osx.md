@@ -24,7 +24,7 @@ In case you want to build the disk image with `make deploy` (.dmg / optional), y
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Ventas Core
+Build VENTAS Core
 ------------------------
 
 1. Clone the ventas source code and cd into `ventas`
@@ -53,19 +53,19 @@ Build Ventas Core
 Running
 -------
 
-Ventas Core is now available at `./src/ventasd`
+VENTAS Core is now available at `./src/ventasd`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=ventasrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Ventas/ventas.conf"
+    echo -e "rpcuser=ventasrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/VENTAS/ventas.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Ventas/ventas.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/VENTAS/ventas.conf"
 
 The first time you run ventasd, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Ventas/debug.log
+    tail -f $HOME/Library/Application\ Support/VENTAS/debug.log
 
 Other commands:
 -------

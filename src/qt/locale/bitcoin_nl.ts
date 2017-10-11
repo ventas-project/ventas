@@ -62,12 +62,12 @@
         <translation>Ontvangstadressen</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Ventasadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw ventas verzendt.</translation>
+        <source>These are your VENTAS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw VENTASadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw ventas verzendt.</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dit zijn uw Ventas-adressen waarmee u betalingen kunt ontvangen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
+        <source>These are your VENTAS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dit zijn uw VENTAS-adressen waarmee u betalingen kunt ontvangen. We raden u aan om een nieuw ontvangstadres voor elke transactie te gebruiken.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -338,8 +338,8 @@
         <translation>Bezig met herindexeren van blokken op harde schijf...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Verstuur munten naar een Ventasadres</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Verstuur munten naar een VENTASadres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -362,8 +362,8 @@
         <translation>&amp;Verifiëer bericht...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -390,12 +390,12 @@
         <translation>Versleutel de geheime sleutels die bij uw portemonnee horen</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Ventasadressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw VENTASadressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Ventasadressen</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde VENTASadressen</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Opdrachtregelopties</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n actieve verbinding met Ventasnetwerk</numerusform><numerusform>%n actieve verbindingen met Ventasnetwerk</numerusform></translation>
+        <source>%n active connection(s) to VENTAS network</source>
+        <translation><numerusform>%n actieve verbinding met VENTASnetwerk</numerusform><numerusform>%n actieve verbindingen met VENTASnetwerk</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -478,8 +478,8 @@
         <translation>Bijgewerkt</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Ventas command-line options</source>
-        <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke Ventas commandoregelopties</translation>
+        <source>Show the %1 help message to get a list with possible VENTAS command-line options</source>
+        <translation>Toon het %1 hulpbericht om een lijst te krijgen met mogelijke VENTAS commandoregelopties</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -548,8 +548,8 @@
         <translation>Portemonnee is &lt;b&gt;versleuteld&lt;/b&gt; en momenteel &lt;b&gt;gesloten&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>A fatal error occurred. Ventas can no longer continue safely and will quit.</source>
-        <translation>Een fatale fout heeft zich voorgedaan. Ventas kan niet veilig worden verdergezet en wordt afgesloten.</translation>
+        <source>A fatal error occurred. VENTAS can no longer continue safely and will quit.</source>
+        <translation>Een fatale fout heeft zich voorgedaan. VENTAS kan niet veilig worden verdergezet en wordt afgesloten.</translation>
     </message>
 </context>
 <context>
@@ -742,8 +742,8 @@
         <translation>Bewerk verzendadres</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ventas address.</source>
-        <translation>Het opgegeven adres "%1" is een ongeldig Ventasadres.</translation>
+        <source>The entered address "%1" is not a valid VENTAS address.</source>
+        <translation>Het opgegeven adres "%1" is een ongeldig VENTASadres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -851,8 +851,8 @@
         <translation>Omdat dit de eerste keer is dat het programma gestart is, kunt u nu kiezen waar %1 de data moet opslaan.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Ventas block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 zal een kopie van de Ventas blokketen downloaden en opslaan. Tenminste %2 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
+        <source>%1 will download and store a copy of the VENTAS block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 zal een kopie van de VENTAS blokketen downloaden en opslaan. Tenminste %2 GB aan data wordt opgeslagen in deze map en het zal groeien in de tijd. De portemonnee wordt ook in deze map opgeslagen.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -887,7 +887,7 @@
     </message>
     <message>
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the ventas network, as detailed below.</source>
-        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de geldbeugel is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het Ventas-netwerk werd voltooid, zoals onderaan beschreven.</translation>
+        <translation>Recente transacties zijn mogelijk nog niet zichtbaar. De balans van de geldbeugel is daarom mogelijk niet correct. Deze informatie is correct van zodra de synchronisatie met het VENTAS-netwerk werd voltooid, zoals onderaan beschreven.</translation>
     </message>
     <message>
         <source>Attempting to spend ventas that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
@@ -1048,16 +1048,16 @@
         <translation>&amp;Spendeer onbevestigd wisselgeld</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de Ventaspoort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de VENTASpoort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Portmapping via &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>Verbind met het Ventasnetwerk via een SOCKS5 proxy.</translation>
+        <source>Connect to the VENTAS network through a SOCKS5 proxy.</source>
+        <translation>Verbind met het VENTASnetwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1096,8 +1096,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Maak verbinding met Ventasnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
+        <source>Connect to the VENTAS network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Maak verbinding met VENTASnetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1195,8 +1195,8 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het Ventasnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het VENTASnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1286,8 +1286,8 @@
         <translation>Ongeldig betalingsadres %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Ventas address or malformed URI parameters.</source>
-        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig Ventas adres of misvormde URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid VENTAS address or malformed URI parameters.</source>
+        <translation>URI kan niet verwerkt worden! Dit kan het gevolg zijn van een ongeldig VENTAS adres of misvormde URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1380,8 +1380,8 @@
         <translation>Bedrag</translation>
     </message>
     <message>
-        <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>Voer een Ventasadres in (bijv. %1)</translation>
+        <source>Enter a VENTAS address (e.g. %1)</source>
+        <translation>Voer een VENTASadres in (bijv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1804,8 +1804,8 @@
         <translation>H&amp;ergebruik en bestaand ontvangstadres (niet aanbevolen)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ventas network.</source>
-        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het Ventasnetwerk.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the VENTAS network.</source>
+        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het VENTASnetwerk.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2201,8 +2201,8 @@
         <translation><numerusform>Schatting is dat bevestiging begint over %n blok.</numerusform><numerusform>Schatting is dat bevestiging begint over %n blokken.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Ventas address</source>
-        <translation>Waarschuwing: Ongeldig Ventasadres</translation>
+        <source>Warning: Invalid VENTAS address</source>
+        <translation>Waarschuwing: Ongeldig VENTASadres</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2244,8 +2244,8 @@
         <translation>Dit is een normale betaling.</translation>
     </message>
     <message>
-        <source>The Ventas address to send the payment to</source>
-        <translation>Het Ventasadres om betaling aan te versturen</translation>
+        <source>The VENTAS address to send the payment to</source>
+        <translation>Het VENTASadres om betaling aan te versturen</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2288,8 +2288,8 @@
         <translation>Vul een label voor dit adres in om het aan de lijst met gebruikte adressen toe te voegen</translation>
     </message>
     <message>
-        <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de ventas: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het Ventasnetwerk.</translation>
+        <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the VENTAS network.</source>
+        <translation>Een bericht dat werd toegevoegd aan de ventas: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het VENTASnetwerk.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2334,11 +2334,11 @@
     </message>
     <message>
         <source>You can sign messages/agreements with your addresses to prove you can receive ventas sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u Ventas kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
+        <translation>U kunt berichten/overeenkomsten ondertekenen met uw adres om te bewijzen dat u VENTAS kunt versturen. Wees voorzichtig met het ondertekenen van iets vaags of willekeurigs, omdat phishingaanvallen u kunnen proberen te misleiden tot het ondertekenen van overeenkomsten om uw identiteit aan hen toe te vertrouwen. Onderteken alleen volledig gedetailleerde verklaringen voordat u akkoord gaat.</translation>
     </message>
     <message>
-        <source>The Ventas address to sign the message with</source>
-        <translation>Het Ventasadres om bericht mee te ondertekenen</translation>
+        <source>The VENTAS address to sign the message with</source>
+        <translation>Het VENTASadres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2369,8 +2369,8 @@
         <translation>Kopieer de huidige handtekening naar het systeemklembord</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ventas address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Ventasadres bezit</translation>
+        <source>Sign the message to prove you own this VENTAS address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald VENTASadres bezit</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2393,12 +2393,12 @@
         <translation>Voer het adres van de ontvanger in, bericht (zorg ervoor dat de regeleinden, spaties, tabs etc. precies kloppen) en onderteken onderaan om het bericht te verifiëren. Wees voorzicht om niet meer in de ondertekening te lezen dan in het getekende bericht zelf, om te voorkomen dat je wordt aangevallen met een man-in-the-middle attack. Houd er mee rekening dat dit alleen de ondertekende partij bewijst met het ontvangen adres, er kan niet bewezen worden dat er een transactie heeft plaatsgevonden!</translation>
     </message>
     <message>
-        <source>The Ventas address the message was signed with</source>
-        <translation>Het Ventasadres waarmee het bericht ondertekend is</translation>
+        <source>The VENTAS address the message was signed with</source>
+        <translation>Het VENTASadres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Ventasadres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified VENTAS address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde VENTASadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -3054,8 +3054,8 @@
         <translation>Niet mogelijk ok HTTP-server te starten. Zie debuglogboek voor details.</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

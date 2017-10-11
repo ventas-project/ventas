@@ -130,7 +130,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
+        <source>Send coins to a VENTAS address</source>
         <translation>Пошаљите новац на ventas адресу</translation>
     </message>
     <message>

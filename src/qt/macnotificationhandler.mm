@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"com.ventas.Ventas-Qt";
+        return @"com.ventas.VENTAS-Qt";
     } else {
         return [self __bundleIdentifier];
     }

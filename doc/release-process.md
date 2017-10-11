@@ -36,7 +36,7 @@ Check out the source code in the following directory hierarchy.
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/ventas-project/ventas.git
 
-### Ventas maintainers/release engineers, update version in sources
+### VENTAS maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -122,7 +122,7 @@ NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from 
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Ventas Core for Linux, Windows, and OS X:
+### Build and sign VENTAS Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
     ./bin/gbuild --num-make 2 --memory 3000 --commit ventas=v${VERSION} ../ventas/contrib/gitian-descriptors/gitian-linux.yml
@@ -258,7 +258,7 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - Update title of #ventas and #ventas-dev on Freenode IRC
 
-  - Optionally twitter, reddit /r/Ventas, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/VENTAS, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 

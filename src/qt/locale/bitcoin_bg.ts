@@ -62,12 +62,12 @@
         <translation>Адреси за получаване</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your VENTAS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Това са адресите на получателите на плащания. Винаги проверявайте размера на сумата и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са Вашите Ventas адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
+        <source>These are your VENTAS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са Вашите VENTAS адреси,благодарение на които ще получавате плащания.Препоръчително е да използвате нови адреси за получаване на всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -318,7 +318,7 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
+        <source>Send coins to a VENTAS address</source>
         <translation>Изпращане към Биткоин адрес</translation>
     </message>
     <message>
@@ -342,7 +342,7 @@
         <translation>&amp;Проверка на съобщение...</translation>
     </message>
     <message>
-        <source>Ventas</source>
+        <source>VENTAS</source>
         <translation>Биткоин</translation>
     </message>
     <message>
@@ -370,12 +370,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Ventas адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя VENTAS адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Ventas адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените VENTAS адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -395,7 +395,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ventas: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Ventas: URIs)</translation>
+        <translation>Изискване на плащания(генерира QR кодове и VENTAS: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -407,7 +407,7 @@
     </message>
     <message>
         <source>Open a ventas: URI or payment request</source>
-        <translation>Отворете Ventas: URI  или заявка за плащане</translation>
+        <translation>Отворете VENTAS: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -450,8 +450,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Ventas command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Ventas команди</translation>
+        <source>Show the %1 help message to get a list with possible VENTAS command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни VENTAS команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -690,7 +690,7 @@
         <translation>Редактиране на адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ventas address.</source>
+        <source>The entered address "%1" is not a valid VENTAS address.</source>
         <translation>"%1" не е валиден Биткоин адрес.</translation>
     </message>
     <message>
@@ -904,16 +904,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Ventas порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия VENTAS порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Ventas мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the VENTAS network through a SOCKS5 proxy.</source>
+        <translation>Свързване с VENTAS мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1007,7 +1007,7 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
         <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Биткоин, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
@@ -1063,7 +1063,7 @@
     </message>
     <message>
         <source>Cannot start ventas: click-to-pay handler</source>
-        <translation>Ventas не можe да се стартира: click-to-pay handler</translation>
+        <translation>VENTAS не можe да се стартира: click-to-pay handler</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1136,8 +1136,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>Въведете Ventas адрес (например: %1)</translation>
+        <source>Enter a VENTAS address (e.g. %1)</source>
+        <translation>Въведете VENTAS адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1689,8 +1689,8 @@
         <translation>Заявката за плащане е изтекла.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Ventas address</source>
-        <translation>Внимание: Невалиден Ventas адрес</translation>
+        <source>Warning: Invalid VENTAS address</source>
+        <translation>Внимание: Невалиден VENTAS адрес</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -1809,7 +1809,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ventas address</source>
+        <source>Sign the message to prove you own this VENTAS address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1825,7 +1825,7 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ventas address</source>
+        <source>Verify the message to ensure it was signed with the specified VENTAS address</source>
         <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Биткоин адрес</translation>
     </message>
     <message>
@@ -2346,8 +2346,8 @@
         <translation>Въведете Ваш публичен адрес</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas ядро</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS ядро</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

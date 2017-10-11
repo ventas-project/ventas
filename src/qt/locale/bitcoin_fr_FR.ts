@@ -218,8 +218,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Envoyer des pièces à une adresse Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Envoyer des pièces à une adresse VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -242,8 +242,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Ventas pour prouver que vous les détenez</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses VENTAS pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -306,8 +306,8 @@
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n connexion active au réseau Ventas</numerusform><numerusform>%n connexions actives au réseau Ventas</numerusform></translation>
+        <source>%n active connection(s) to VENTAS network</source>
+        <translation><numerusform>%n connexion active au réseau VENTAS</numerusform><numerusform>%n connexions actives au réseau VENTAS</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -684,8 +684,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Ventas automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client VENTAS automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -844,8 +844,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>Entrer une adresse Ventas (e.g. %1)</translation>
+        <source>Enter a VENTAS address (e.g. %1)</source>
+        <translation>Entrer une adresse VENTAS (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1662,8 +1662,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

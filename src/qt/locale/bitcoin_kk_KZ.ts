@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Ventas</source>
+        <source>VENTAS</source>
         <translation>Биткоин</translation>
     </message>
     <message>

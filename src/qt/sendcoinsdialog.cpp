@@ -764,7 +764,7 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text)
         }
         else if (!addr.IsValid()) // Invalid address
         {
-            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid Ventas address"));
+            ui->labelCoinControlChangeLabel->setText(tr("Warning: Invalid VENTAS address"));
         }
         else // Valid address
         {
