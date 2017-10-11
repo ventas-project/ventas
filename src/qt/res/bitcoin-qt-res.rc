@@ -19,8 +19,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Ventas"
-            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for Ventas)"
+            VALUE "CompanyName",        "VENTAS"
+            VALUE "FileDescription",    PACKAGE_NAME " (GUI node for VENTAS)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "ventas-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR

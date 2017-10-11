@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Trimite monedele către o adresă Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Trimite monedele către o adresă VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Ventas pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de VENTAS pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Ventas specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de VENTAS specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -748,8 +748,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Ventas Core</source>
-        <translation>Ventas Core</translation>
+        <source>VENTAS Core</source>
+        <translation>VENTAS Core</translation>
     </message>
     <message>
         <source>Information</source>

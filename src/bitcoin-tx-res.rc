@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Ventas"
-            VALUE "FileDescription",    "ventas-tx (CLI Ventas transaction editor utility)"
+            VALUE "CompanyName",        "VENTAS"
+            VALUE "FileDescription",    "ventas-tx (CLI VENTAS transaction editor utility)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "ventas-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR

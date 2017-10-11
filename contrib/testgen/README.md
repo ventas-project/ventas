@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Ventas tests.
+Utilities to generate test vectors for the data-driven VENTAS tests.
 
 Usage: 
 

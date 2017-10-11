@@ -1,15 +1,15 @@
-Ventas Core 0.14.2
+VENTAS Core 0.14.2
 =====================
 
 Setup
 ---------------------
-Ventas Core is the original Ventas client and it builds the backbone of the network. However, it downloads and stores the entire history of Ventas transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+VENTAS Core is the original VENTAS client and it builds the backbone of the network. However, it downloads and stores the entire history of VENTAS transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Ventas Core, visit [ventasnu.com](http://www.ventasnu.com).
+To download VENTAS Core, visit [ventasnu.com](http://www.ventasnu.com).
 
 Running
 ---------------------
-The following are some helpful notes on how to run Ventas on your native platform.
+The following are some helpful notes on how to run VENTAS on your native platform.
 
 ### Unix
 
@@ -24,18 +24,18 @@ Unpack the files into a directory, and then run ventas-qt.exe.
 
 ### OS X
 
-Drag Ventas-Core to your applications folder, and then run Ventas-Core.
+Drag VENTAS-Core to your applications folder, and then run VENTAS-Core.
 
 ### Need Help?
 
-* See the documentation at the [Ventas Wiki](https://ventas.info/)
+* See the documentation at the [VENTAS Wiki](https://ventas.info/)
 for help and more information.
 * Ask for help on [#ventas](http://webchat.freenode.net?channels=ventas) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=ventas).
-* Ask for help on the [VentasTalk](https://ventastalk.io/) forums.
+* Ask for help on the [VENTASTalk](https://ventastalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Ventas on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build VENTAS on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -45,7 +45,7 @@ The following are developer notes on how to build Ventas on your native platform
 
 Development
 ---------------------
-The Ventas repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The VENTAS repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Release Notes](release-notes.md)
@@ -61,8 +61,8 @@ The Ventas repo's [root README](/README.md) contains relevant information on the
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [VentasTalk](https://ventastalk.io/) forums.
-* Discuss general Ventas development on #ventas-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ventas-dev).
+* Discuss on the [VENTASTalk](https://ventastalk.io/) forums.
+* Discuss general VENTAS development on #ventas-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ventas-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

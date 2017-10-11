@@ -30,7 +30,7 @@ tar cvf $tarname \
     --exclude=**.a \
     --exclude=**.dmg \
     --exclude=wallet.dat** \
-    --exclude=Ventas-Qt.app \
+    --exclude=VENTAS-Qt.app \
     *
 
 # rm -Rf $gitdir/*

@@ -549,7 +549,7 @@ UniValue createrawtransaction(const JSONRPCRequest& request)
         } else {
             CBitcoinAddress address(name_);
             if (!address.IsValid())
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Ventas address: ")+name_);
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid VENTAS address: ")+name_);
 
             if (setAddress.count(address))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+name_);
@@ -992,9 +992,12 @@ UniValue sendrawtransaction(const JSONRPCRequest& request)
     CMutableTransaction mtx;
     if (!DecodeHexTx(mtx, request.params[0].get_str()))
         throw JSONRPCError(RPC_DESERIALIZATION_ERROR, "TX decode failed");
-    CTransactionRef tx(MakeTransactionRef(std::move(mtx)));
-    const uint256& hashTx = tx->GetHash();
 
+   
+    CTransactionRef tx(MakeTransactionRef(std::move(mtx)));
+    
+    const uint256& hashTx = tx->GetHash();
+    
     bool fLimitFree = false;
     CAmount nMaxRawTxFee = maxTxFee;
     if (request.params.size() > 1 && request.params[1].get_bool())

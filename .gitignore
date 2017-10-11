@@ -88,7 +88,7 @@ src/qt/test/moc*.cpp
 *.qm
 Makefile
 ventas-qt
-Ventas-Qt.app
+VENTAS-Qt.app
 ventas-qt
 Ventas-Qt.app
 ventasd

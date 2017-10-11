@@ -62,7 +62,7 @@
         <translation>آدرس های گیرنده</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your VENTAS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>اینها آدرس های شما برای فرستادن پرداخت هاست. همیشه قبل از فرستادن سکه ها مقدار و آدرس دریافت کننده را چک کنید.</translation>
     </message>
     <message>
@@ -298,8 +298,8 @@
         <translation>بازنشانی بلوک‌ها روی دیسک...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>ارسال وجه به نشانی Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>ارسال وجه به نشانی VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -322,8 +322,8 @@
         <translation>با&amp;زبینی پیام...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -350,12 +350,12 @@
         <translation>رمزنگاری کلیدهای خصوصی متعلق به کیف پول شما</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی Ventas خود امضا کنید</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>برای اثبات اینکه پیام‌ها به شما تعلق دارند، آن‌ها را با نشانی VENTAS خود امضا کنید</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی Ventas مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی VENTAS مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -394,8 +394,8 @@
         <translation>گزینه‌های خط‌فرمان</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n ارتباط فعال با شبکهٔ Ventas</numerusform></translation>
+        <source>%n active connection(s) to VENTAS network</source>
+        <translation><numerusform>%n ارتباط فعال با شبکهٔ VENTAS</numerusform></translation>
     </message>
     <message>
         <source>Processing blocks on disk...</source>
@@ -642,8 +642,8 @@
         <translation>ویرایش آدرس قرستنده</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Ventas address.</source>
-        <translation>نشانی وارد شده "%1" یک نشانی معتبر Ventas نیست.</translation>
+        <source>The entered address "%1" is not a valid VENTAS address.</source>
+        <translation>نشانی وارد شده "%1" یک نشانی معتبر VENTAS نیست.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -852,8 +852,8 @@
         <translation>استخراج</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>باز کردن خودکار درگاه شبکهٔ Ventas روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>باز کردن خودکار درگاه شبکهٔ VENTAS روی روترها. تنها زمانی کار می‌کند که روتر از پروتکل UPnP پشتیبانی کند و این پروتکل فعال باشد.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -951,8 +951,8 @@
         <translation>فرم</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
-        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ Ventas همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
+        <translation>اطلاعات نمایش‌داده شده ممکن است قدیمی باشند. بعد از این که یک اتصال با شبکه برقرار شد، کیف پول شما به‌صورت خودکار با شبکهٔ VENTAS همگام‌سازی می‌شود. اما این روند هنوز کامل نشده است.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1016,8 +1016,8 @@
         <translation>مبلغ</translation>
     </message>
     <message>
-        <source>Enter a Ventas address (e.g. %1)</source>
-        <translation>یک آدرس Ventas وارد کنید (مثلاً %1)</translation>
+        <source>Enter a VENTAS address (e.g. %1)</source>
+        <translation>یک آدرس VENTAS وارد کنید (مثلاً %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1476,8 +1476,8 @@
         <translation>این یک پرداخت عادی است</translation>
     </message>
     <message>
-        <source>The Ventas address to send the payment to</source>
-        <translation>نشانی Ventas برای ارسال پرداخت به آن</translation>
+        <source>The VENTAS address to send the payment to</source>
+        <translation>نشانی VENTAS برای ارسال پرداخت به آن</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1529,8 +1529,8 @@
         <translation>ا&amp;مضای پیام</translation>
     </message>
     <message>
-        <source>The Ventas address to sign the message with</source>
-        <translation>نشانی Ventas برای امضاء پیغام با آن</translation>
+        <source>The VENTAS address to sign the message with</source>
+        <translation>نشانی VENTAS برای امضاء پیغام با آن</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1561,7 +1561,7 @@
         <translation>امضای فعلی را به حافظهٔ سیستم کپی کن</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ventas address</source>
+        <source>Sign the message to prove you own this VENTAS address</source>
         <translation>برای اثبات تعلق این نشانی به شما، پیام را امضا کنید</translation>
     </message>
     <message>
@@ -1581,12 +1581,12 @@
         <translation>&amp;شناسایی پیام</translation>
     </message>
     <message>
-        <source>The Ventas address the message was signed with</source>
-        <translation>نشانی Ventas که پیغام با آن امضاء شده</translation>
+        <source>The VENTAS address the message was signed with</source>
+        <translation>نشانی VENTAS که پیغام با آن امضاء شده</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>برای حصول اطمینان از اینکه پیام با نشانی Ventas مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
+        <source>Verify the message to ensure it was signed with the specified VENTAS address</source>
+        <translation>برای حصول اطمینان از اینکه پیام با نشانی VENTAS مشخص شده امضا است یا خیر، پیام را شناسایی کنید</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1702,8 +1702,8 @@
         <translation>اجرا در پشت زمینه به‌صورت یک سرویس و پذیرش دستورات</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation> هسته Ventas </translation>
+        <source>VENTAS Core</source>
+        <translation> هسته VENTAS </translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

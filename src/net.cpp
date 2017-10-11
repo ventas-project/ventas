@@ -1466,7 +1466,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Ventas " + FormatFullVersion();
+        std::string strDesc = "VENTAS " + FormatFullVersion();
 
         try {
             while (true) {

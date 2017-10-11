@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
-        <translation>Enviar monedas a una dirección Ventas</translation>
+        <source>Send coins to a VENTAS address</source>
+        <translation>Enviar monedas a una dirección VENTAS</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Ventas para demostrar la propiedad</translation>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones VENTAS para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Ventas concretas</translation>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones VENTAS concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -219,7 +219,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and ventas: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Ventas)</translation>
+        <translation>Solicitar pagos (genera codigo QR y URL's de VENTAS)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Ventas en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente VENTAS en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Ventas después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red VENTAS después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ventas address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Ventas</translation>
+        <source>Sign the message to prove you own this VENTAS address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección VENTAS</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Ventas indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified VENTAS address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección VENTAS indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Núcleo de Ventas</translation>
+        <source>VENTAS Core</source>
+        <translation>Núcleo de VENTAS</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

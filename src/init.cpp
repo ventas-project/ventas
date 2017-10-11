@@ -793,7 +793,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Ventas version %s\n", FormatFullVersion());
+    LogPrintf("VENTAS version %s\n", FormatFullVersion());
 }
 
 namespace { // Variables internal to initialization process only

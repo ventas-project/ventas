@@ -62,12 +62,12 @@
         <translation>Adresy odbioru</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tutaj znajdują się adresy Ventas na które wysyłasz płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
+        <source>These are your VENTAS addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tutaj znajdują się adresy VENTAS na które wysyłasz płatności. Zawsze sprawdzaj ilość i adres odbiorcy przed wysyłką monet.</translation>
     </message>
     <message>
-        <source>These are your Ventas addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>To są twoje adresy Ventas do odbierania płatności. Zaleca się używanie nowych adresów odbiorczych dla każdej transakcji.</translation>
+        <source>These are your VENTAS addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>To są twoje adresy VENTAS do odbierania płatności. Zaleca się używanie nowych adresów odbiorczych dla każdej transakcji.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -322,7 +322,7 @@
         <translation>Ponowne indeksowanie bloków na dysku...</translation>
     </message>
     <message>
-        <source>Send coins to a Ventas address</source>
+        <source>Send coins to a VENTAS address</source>
         <translation>Wyślij monety na adres ventas owy</translation>
     </message>
     <message>
@@ -346,8 +346,8 @@
         <translation>&amp;Zweryfikuj wiadomość...</translation>
     </message>
     <message>
-        <source>Ventas</source>
-        <translation>Ventas</translation>
+        <source>VENTAS</source>
+        <translation>VENTAS</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -374,11 +374,11 @@
         <translation>Szyfruj klucze prywatne, które są w twoim portfelu</translation>
     </message>
     <message>
-        <source>Sign messages with your Ventas addresses to prove you own them</source>
+        <source>Sign messages with your VENTAS addresses to prove you own them</source>
         <translation>Podpisz wiadomości swoim adresem aby udowodnić jego posiadanie</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Ventas addresses</source>
+        <source>Verify messages to ensure they were signed with specified VENTAS addresses</source>
         <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem ventas owym.</translation>
     </message>
     <message>
@@ -418,8 +418,8 @@
         <translation>&amp;Opcje linii komend</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Ventas network</source>
-        <translation><numerusform>%n aktywnych połączeń do sieci Ventas</numerusform><numerusform>%n aktywnych połączeń do sieci Ventas</numerusform><numerusform>%n aktywnych połączeń do sieci Ventas</numerusform><numerusform>%n aktywnych połączeń do sieci Ventas</numerusform></translation>
+        <source>%n active connection(s) to VENTAS network</source>
+        <translation><numerusform>%n aktywnych połączeń do sieci VENTAS</numerusform><numerusform>%n aktywnych połączeń do sieci VENTAS</numerusform><numerusform>%n aktywnych połączeń do sieci VENTAS</numerusform><numerusform>%n aktywnych połączeń do sieci VENTAS</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -462,7 +462,7 @@
         <translation>Aktualny</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Ventas command-line options</source>
+        <source>Show the %1 help message to get a list with possible VENTAS command-line options</source>
         <translation>Pokaż pomoc %1 aby zobaczyć listę wszystkich opcji lnii poleceń.</translation>
     </message>
     <message>
@@ -811,8 +811,8 @@
         <translation>Ponieważ jest to pierwsze uruchomienie programu, możesz wybrać gdzie %1 będzie przechowywał swoje dane.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Ventas block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 pobierze i będzie przechowywał kopię łańcucha bloków Ventas. W wybranym katalogu zostanie zapisanych %2GB danych, a z czasem ta ilość będzie rosła. Portfel będzie przechowywany w tym samym katalogu.</translation>
+        <source>%1 will download and store a copy of the VENTAS block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 pobierze i będzie przechowywał kopię łańcucha bloków VENTAS. W wybranym katalogu zostanie zapisanych %2GB danych, a z czasem ta ilość będzie rosła. Portfel będzie przechowywany w tym samym katalogu.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1000,16 +1000,16 @@
         <translation>Wydaj niepotwierdzoną re&amp;sztę</translation>
     </message>
     <message>
-        <source>Automatically open the Ventas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatycznie otwiera port klienta Ventas na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
+        <source>Automatically open the VENTAS client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatycznie otwiera port klienta VENTAS na routerze. Ta opcja dzieła tylko jeśli twój router wspiera UPnP i jest ono włączone.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Mapuj port używając &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a SOCKS5 proxy.</source>
-        <translation>Połącz się z siecią Ventas poprzez proxy SOCKS5.</translation>
+        <source>Connect to the VENTAS network through a SOCKS5 proxy.</source>
+        <translation>Połącz się z siecią VENTAS poprzez proxy SOCKS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1048,8 +1048,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Ventas network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Połącz się z siecią Ventas przy pomocy oddzielnego SOCKS5 proxy dla sieci TOR</translation>
+        <source>Connect to the VENTAS network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Połącz się z siecią VENTAS przy pomocy oddzielnego SOCKS5 proxy dla sieci TOR</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1147,7 +1147,7 @@
         <translation>Formularz</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Ventas network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VENTAS network after a connection is established, but this process has not completed yet.</source>
         <translation>Wyświetlana informacja może być nieaktualna. Twój portfel synchronizuje się automatycznie z siecią ventas, zaraz po tym jak uzyskano połączenie, ale proces ten nie został jeszcze ukończony.</translation>
     </message>
     <message>
@@ -1292,7 +1292,7 @@
         <translation>Kwota</translation>
     </message>
     <message>
-        <source>Enter a Ventas address (e.g. %1)</source>
+        <source>Enter a VENTAS address (e.g. %1)</source>
         <translation>Wprowadź adres ventas owy (np. %1)</translation>
     </message>
     <message>
@@ -1680,8 +1680,8 @@
         <translation>U&amp;żyj ponownie istniejącego adresu odbiorczego (niepolecane)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Ventas network.</source>
-        <translation>Opcjonalna wiadomość do dołączenia do żądania płatności, która będzie wyświetlana, gdy żądanie zostanie otwarte. Uwaga: wiadomość ta nie zostanie wysłana wraz z płatnością w sieci Ventas.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the VENTAS network.</source>
+        <translation>Opcjonalna wiadomość do dołączenia do żądania płatności, która będzie wyświetlana, gdy żądanie zostanie otwarte. Uwaga: wiadomość ta nie zostanie wysłana wraz z płatnością w sieci VENTAS.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2017,8 +2017,8 @@
         <translation>Zapłać tylko wymaganą opłatę w wysokości %1</translation>
     </message>
     <message>
-        <source>Warning: Invalid Ventas address</source>
-        <translation>Ostrzeżenie: nieprawidłowy adres Ventas</translation>
+        <source>Warning: Invalid VENTAS address</source>
+        <translation>Ostrzeżenie: nieprawidłowy adres VENTAS</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2052,8 +2052,8 @@
         <translation>To jest standardowa płatność</translation>
     </message>
     <message>
-        <source>The Ventas address to send the payment to</source>
-        <translation>Adres Ventas gdzie wysłać płatność</translation>
+        <source>The VENTAS address to send the payment to</source>
+        <translation>Adres VENTAS gdzie wysłać płatność</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2096,8 +2096,8 @@
         <translation>Wprowadź etykietę dla tego adresu by dodać go do listy użytych adresów</translation>
     </message>
     <message>
-        <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Ventas network.</source>
-        <translation>Wiadomość, która została dołączona do URI ventas:, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci Ventas.</translation>
+        <source>A message that was attached to the ventas: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the VENTAS network.</source>
+        <translation>Wiadomość, która została dołączona do URI ventas:, która będzie przechowywana wraz z transakcją w celach informacyjnych. Uwaga: Ta wiadomość nie będzie rozsyłana w sieci VENTAS.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2141,8 +2141,8 @@
         <translation>Możesz podpisywać wiadomości swoimi adresami aby udowodnić, że jesteś ich właścicielem. Uważaj, aby nie podpisywać niczego co wzbudza Twoje podejrzenia, ponieważ ktoś może stosować phishing próbując nakłonić Cię do ich podpisania. Akceptuj i podpisuj tylko w pełni zrozumiałe komunikaty i wiadomości.</translation>
     </message>
     <message>
-        <source>The Ventas address to sign the message with</source>
-        <translation>Adres Ventas, za pomocą którego podpisać wiadomość</translation>
+        <source>The VENTAS address to sign the message with</source>
+        <translation>Adres VENTAS, za pomocą którego podpisać wiadomość</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2173,7 +2173,7 @@
         <translation>Kopiuje aktualny podpis do schowka systemowego</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Ventas address</source>
+        <source>Sign the message to prove you own this VENTAS address</source>
         <translation>Podpisz wiadomość aby dowieść, że ten adres jest twój</translation>
     </message>
     <message>
@@ -2198,12 +2198,12 @@
 Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadawca posiada klucz do adresu, natomiast nie potwierdza to, że poprawne wysłanie jakiejkolwiek transakcji! </translation>
     </message>
     <message>
-        <source>The Ventas address the message was signed with</source>
-        <translation>Adres Ventas, którym została podpisana wiadomość</translation>
+        <source>The VENTAS address the message was signed with</source>
+        <translation>Adres VENTAS, którym została podpisana wiadomość</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Ventas address</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem Ventas.</translation>
+        <source>Verify the message to ensure it was signed with the specified VENTAS address</source>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana odpowiednim adresem VENTAS.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2487,8 +2487,8 @@ Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadaw
         <translation>Uruchomienie serwera HTTP nie powiodło się. Zobacz dziennik debugowania, aby uzyskać więcej szczegółów.</translation>
     </message>
     <message>
-        <source>Ventas Core</source>
-        <translation>Rdzeń Ventasa</translation>
+        <source>VENTAS Core</source>
+        <translation>Rdzeń VENTASa</translation>
     </message>
     <message>
         <source>The %s developers</source>
