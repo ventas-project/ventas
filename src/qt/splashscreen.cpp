@@ -75,7 +75,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     // QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
     QPixmap pixmap2;
     QIcon appIcon;
-    pixmap2.load(":/icons/ventas_splash");
+    pixmap2.load(":/icons/app_splash");
     appIcon = QIcon(pixmap2);
     
     QPixmap icon(appIcon.pixmap(requiredSize));

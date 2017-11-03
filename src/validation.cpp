@@ -985,7 +985,7 @@ bool AcceptToMemoryPoolWorker(CTxMemPool& pool, CValidationState& state, const C
         // Remove conflicting transactions from the mempool
         BOOST_FOREACH(const CTxMemPool::txiter it, allConflicting)
         {
-            LogPrint("mempool", "replacing tx %s with %s for %s VEN additional fees, %d delta bytes\n",
+            LogPrint("mempool", "replacing tx %s with %s for %s VENC additional fees, %d delta bytes\n",
                     it->GetTx().GetHash().ToString(),
                     hash.ToString(),
                     FormatMoney(nModifiedFees - nConflictingFees),
@@ -1234,8 +1234,10 @@ CAmount GetBlockSubsidy(const CBlockIndex * pindexPrev , const Consensus::Params
         nSubsidy = 5 * COIN;
     else if(pindexPrev->nHeight <BLOCK_HEIGHT_INIT){
         nSubsidy = 14000000 * COIN; //
-    }else{
+    }else if(pindexPrev->nHeight <BLOCK_HEIGHT_FIVE){
         nSubsidy = 50 * COIN; //
+    }else{
+        nSubsidy = 20 * COIN; //
     }
     //limit of reward
     if (pindexPrev != NULL && (pindexPrev->nMoneySupply + nSubsidy) >= MAX_MONEY) {
@@ -2183,8 +2185,13 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         return state.DoS(100, false);
     int64_t nTime4 = GetTimeMicros(); nTimeVerify += nTime4 - nTime2;
     LogPrint("bench", "    - Verify %u txins: %.2fms (%.3fms/txin) [%.2fs]\n", nInputs - 1, 0.001 * (nTime4 - nTime2), nInputs <= 1 ? 0 : 0.001 * (nTime4 - nTime2) / (nInputs-1), nTimeVerify * 0.000001);
-    //pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut ;
-    pindex->nMoneySupply = ( ( BLOCK_HEIGHT_INIT * 14000000 ) + (50 * pindex->nHeight) ) * COIN; 
+    if(pindex->nHeight < BLOCK_HEIGHT_FIVE)
+        pindex->nMoneySupply = ( ( BLOCK_HEIGHT_INIT * 14000000 ) + (50 * ( pindex->nHeight - BLOCK_HEIGHT_INIT )  ) ) * COIN; 
+    else
+        pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + ( blockReward<0?0:blockReward -nFees)  ;
+        
+    
+    
     // DbgMsg("moneySupply prev:%u :%u  ,%d " , pindex->pprev->nMoneySupply, (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut , nValueOut );
     // DbgMsg("%u %u %d " ,pindex->nMoneySupply,
     // ( BLOCK_HEIGHT_INIT * 14000000 ) + (50 * pindex->nHeight), pindex->nHeight );
