@@ -5,7 +5,7 @@ Setup
 ---------------------
 VENTAS Core is the original VENTAS client and it builds the backbone of the network. However, it downloads and stores the entire history of VENTAS transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download VENTAS Core, visit [ventasnu.com](http://www.ventasnu.com).
+To download VENTAS Core, visit [ventasnu.com](http://www.ventascorp.com).
 
 Running
 ---------------------
