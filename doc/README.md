@@ -60,9 +60,6 @@ The VENTAS repo's [root README](/README.md) contains relevant information on the
 - [Dnsseed Policy](dnsseed-policy.md)
 - [Benchmarking](benchmarking.md)
 
-### Resources
-* Discuss on the [VENTASTalk](https://ventastalk.io/) forums.
-* Discuss general VENTAS development on #ventas-dev on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=ventas-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
